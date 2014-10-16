@@ -1,0 +1,114 @@
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_default
+ * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/* ============================================ *
+ * Search - Skip Link
+ * ============================================ */
+
+.skip-search {
+
+    &:not(.skip-active):hover {
+        .icon {
+            background-position: -50+4px (-150px + ($toolbar-icon-padding-offset/2));
+        }
+    }
+
+    .icon {
+        @extend .icon-sprite;
+        background-position: 0+4px (-150px + ($toolbar-icon-padding-offset/2));
+    }
+}
+
+// ---------------------------------------------
+
+@include bp(min-width, $bp-medium + 1) {
+
+    .skip-search {
+        display: none;
+    }
+
+}
+
+/* ============================================ *
+ * Search - Skip Content
+ * ============================================ */
+
+#header-search {
+    padding: 20px;
+}
+
+// ---------------------------------------------
+
+@include bp(min-width, $bp-medium + 1) {
+
+    #header-search {
+        display: block; // Force visibility
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 25%;
+        height: 50px;
+        padding: 0;
+    }
+
+}
+
+/* ============================================ *
+ * Search Input
+ * ============================================ */
+
+#search_mini_form .input-box {
+    position: relative;
+    padding-top: 0;
+}
+
+#search_mini_form label {
+    display: none;
+}
+
+#search {
+    width: 100%;
+    height: 40px;
+    padding-right: 40px;
+    font-family: $f-stack-special;
+}
+
+#search_mini_form .search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    bottom: 2px;
+    width: 45px;
+    background: none;
+    color: $c-text;
+    font-size: $f-size-xxl;
+
+    &:before {content:'';position: absolute;left: 0;height: 20px;width: 1px;background-color: $c-input-border;top: 50%;margin-top: -9px;}
+    span {
+        position: absolute;
+        visibility: hidden;
+    }
+}

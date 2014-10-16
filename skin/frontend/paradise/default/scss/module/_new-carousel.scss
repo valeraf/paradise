@@ -1,0 +1,16 @@
+.jcarousel {
+  overflow: hidden;padding: 0;margin: 0;padding-top: 20px;
+  .products-grid {
+    width: 2000em;padding: 0;margin: 0;position: relative;
+    li {clear: none !important;margin: 0 32px 0 0;}
+    @include bp(max-width, $bp-large + 21) {
+      li {margin: 0 34px 0 0;}
+    }
+    @include bp(max-width, $bp-medium) {
+      li {margin: 0 39px 0 0;}
+    }
+    @include bp(max-width, $bp-small + 41) {
+      li {margin: 0 52px 0 0;}
+    }
+  }
+}
