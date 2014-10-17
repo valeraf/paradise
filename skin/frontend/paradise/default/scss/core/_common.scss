@@ -154,17 +154,14 @@ h6, .h6 { @include h6; }
 
 .block-title {
     position: relative;
-    padding: 10px 0 0;
     margin-bottom: 5px;
-    border-top: 1px solid $c-module-border;
 
     h2,
     h3,
     strong {
-        @include h4;
-        color: $c-text-primary;
+        @include h4; 
+        font-size: 20px;
         margin-bottom: 0;
-        text-transform: uppercase;
         font-weight: 600;
     }
     small {
@@ -345,33 +342,19 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
-    background: $c-button;
+    background: $c-dark;
     display: inline-block;
     padding: 7px 15px;
     border: 0;
     color: #FFFFFF;
-    font-size: $f-size-s;
-    font-weight: normal;
-    font-family: $f-stack-special;
-    line-height: 19px;
+    font-size: $f-size-xxs;
+    font-weight: bold;
+    font-family: $f-stack-sans;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
     white-space: nowrap;
-
-    &:hover {
-        background: $c-button-hover;
-        cursor: pointer;
-    }
-    &:active {
-        background: $c-button-active;
-        color: #FFFFFF;
-    }
-    &:focus {
-        background-color: $c-button-active;
-        outline: none;
-        color: #FFFFFF;
-    }
 }
 
 a.button {

@@ -21,13 +21,13 @@
                         </text>
                     </action>
                 </block>
-                <block type="core/text" name="head.viewport">
-                    <action method="setText"><text><![CDATA[<meta name="viewport" content="initial-scale=1.0, width=device-width" />]]>&#10;</text></action>
-                </block>
             </reference>
             <reference name="header">
                 <block type="page/switch" name="store_language" as="store_language" template="page/switch/flags.phtml"/>
             </reference>
         </reference>
     </default>
+    <catalog_category_view>
+        <block type="page/html" name="root" output="toHtml" template="page/2columns-left.phtml">
+    </catalog_category_view>
 </layout>

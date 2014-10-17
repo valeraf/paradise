@@ -1,4 +1,3 @@
-require 'breakpoint'
 # note: this should never truly be refernced since we are using relative assets
 http_path = "/skin/frontend/rwd/default/"
 css_dir = "../css"

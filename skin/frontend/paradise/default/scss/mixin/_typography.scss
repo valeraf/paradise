@@ -37,7 +37,6 @@
     font-style: normal;
     line-height: 1.2;
     text-rendering: optimizeLegibility;
-    text-transform: uppercase;
 }
 
 @mixin h2 {
@@ -50,7 +49,8 @@
     font-style: normal;
     line-height: 1.2;
     text-rendering: optimizeLegibility;
-    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $c-module-border-light;
 }
 
 @mixin h3 {
@@ -63,7 +63,6 @@
     font-style: normal;
     line-height: 1.4;
     text-rendering: optimizeSpeed;
-    text-transform: uppercase;
 }
 
 @mixin h4 {
@@ -76,7 +75,6 @@
     font-style: normal;
     line-height: 1.4;
     text-rendering: optimizeSpeed;
-    text-transform: uppercase;
 }
 
 @mixin h5 {
@@ -89,7 +87,6 @@
     font-style: normal;
     line-height: 1.4;
     text-rendering: optimizeSpeed;
-    text-transform: uppercase;
 }
 
 @mixin h6 {
@@ -102,7 +99,6 @@
     font-style: normal;
     line-height: 1.4;
     text-rendering: optimizeSpeed;
-    text-transform: uppercase;
 }
 
 @mixin pageTitle() {
@@ -113,5 +109,4 @@
     border-bottom: 1px solid $c-module-border-light;
     padding-bottom: 3px;
     margin-bottom: 15px;
-    text-transform: uppercase;
 }

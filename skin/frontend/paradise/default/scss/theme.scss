@@ -24,36 +24,16 @@
  */
 
 // ==============================================
-// SASS / Compass Framework
+// Maddison Island Specific Components
 // ==============================================
 
-// ----------------------------------------------
-// Compass
+$mq-support: true;
+$mq-fixed-value: false;
 
-@import "compass";
-@import "compass/css3";
-
-// ----------------------------------------------
-// Vars
-
-@import "var";
+@import "framework";
 
 // ----------------------------------------------
-// Functions
+// Content
 
-@import "function/black";
-@import "function/white";
-
-// ----------------------------------------------
-// Mixins
-
-@import "mixin/breakpoint";
-@import "mixin/clearfix";
-@import "mixin/image-replacement";
-@import "mixin/menu";
-@import "mixin/not-selectable";
-@import "mixin/if-resolution";
-@import "mixin/toggle-content";
-@import "mixin/triangle";
-@import "mixin/typography";
-@import "mixin/loading-overlay";
+@import "content/home";
+@import "content/category";

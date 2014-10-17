@@ -162,8 +162,7 @@ body .promos > li {
     // Math: (420 - (2 * 10 gutter)) / 3 items = 133.333333333
     body .promos > li {
         float: left;
-        width: percentage(133.333333333 / 420);
-        margin-right: percentage(10 / 420);
+        margin-right: 32px;
     }
 
     .promos > li:nth-child(3n) {
@@ -191,17 +190,5 @@ body .promos > li {
 .cms-index-index .products-grid .actions,
 .cms-index-noroute .products-grid .ratings,
 .cms-index-noroute .products-grid .actions {
-    display: none;
-}
-
-.cms-index-index h2.subtitle {
-    padding: 6px 0;
-    text-align: left;
-    color: $c-text;
-    font-weight: 600;
-    border-bottom: 1px solid $c-module-border-light;
-}
-
-.cms-index-noroute h2.subtitle {
     display: none;
 }

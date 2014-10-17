@@ -48,7 +48,6 @@
 
     .block-title {
         border-bottom: 0;
-        padding: 3px 0;
     }
 
     .block-title strong {
@@ -70,6 +69,7 @@
             word-break: break-all;
             line-height: 1.4;
             padding: 4px 0;
+            font-size: $f-size-s;
         }
 
         a {
@@ -88,7 +88,6 @@
 
     .links,
     .block-subscribe {
-        text-transform: uppercase;
         font-size: $f-size-xs;
     }
 

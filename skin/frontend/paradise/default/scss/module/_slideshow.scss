@@ -31,7 +31,7 @@
     position: relative;
     display: block;
     width: 100%;
-    margin: $gap 0;
+    margin: 0 0 41px;
     border: 1px solid $c-module-border-light;
 
     .slideshow {
@@ -39,7 +39,7 @@
         padding: 0;
         position: relative;
         margin: 0;
-        border: 10px solid #FFFFFF;
+        border: 1px solid #FFFFFF;
         & > li {
             position: absolute;
             top: 0;
@@ -68,40 +68,29 @@
     width: 100%;
     z-index: 115;
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
     top: auto;
     overflow: hidden;
     @include not-selectable;
 
     span {
         font-family: arial;
-        width: 44px;
-        height: 44px;
+        width: 10px;
+        height: 10px;
         display: inline-block;
         color: #DDDDDD;
         cursor: pointer;
         $pager-size: 16px;
+        margin: 0 2px 0 3px;
+        background: #a7a7a7;
+        border-radius: 50%;
 
-        &:before {
-            content: '';
-            display: block;
-            width: $pager-size;
-            height: $pager-size;
-            left: 50%;
-            top: 50%;
-            margin-left: (-$pager-size/2);
-            margin-top: (-$pager-size/2);
-            border-radius: 1px;
-            background-color: #FFFFFF;
-            position: relative;
+        &:hover {
+            background-color: #e72238;
         }
 
-        &:hover:before {
-            background-color: $c-button-hover;
-        }
-
-        &.cycle-pager-active:before {
-            background-color: $c-button-active;
+        &.cycle-pager-active {
+            background-color: #e72238;
         }
     }
 
