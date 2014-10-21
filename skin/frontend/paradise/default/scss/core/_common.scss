@@ -110,17 +110,20 @@ h6, .h6 { @include h6; }
     text-transform: uppercase;
 }
 
-.availability .label {
-    display: none;
-}
 
 .availability.in-stock {
-    color: $c-success;
+    color: $c-text;
+    .value {
+        color: $c-success;
+    }
 }
 
 .availability.available-soon,
 .availability.out-of-stock {
-    color: $c-danger;
+    color: $c-text;
+    .value {
+        color: $c-danger;
+    }
 }
 
 .availability-only {
@@ -342,7 +345,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
-    background: $c-dark;
+    background: #f23940;
     display: inline-block;
     padding: 7px 15px;
     border: 0;
@@ -560,14 +563,15 @@ a.button:hover {
 
 .breadcrumbs {
     overflow: hidden;
-    margin: -15px 0 15px;
+    margin: -15px 0 32px;
+    padding-bottom: 12px;
+    border-bottom:1px solid $c-module-border-light;
 }
 
 .breadcrumbs li {
     float: left;
     font-size: $f-size-xs;
     font-family: $f-stack-special;
-    text-transform: uppercase;
 }
 
 .breadcrumbs a {
