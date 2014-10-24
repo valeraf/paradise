@@ -82,7 +82,7 @@ form .legend {
 label {
     display: inline-block;
     font-size: $f-size-s;
-    font-family: $f-stack-special;
+    font-family: $f-stack-sans;
     @include not-selectable;
 }
 
@@ -145,7 +145,6 @@ textarea {
 
 .input-text {
     @include appearance(none);
-    @include border-radius(2px);
     border: 1px solid $c-input-border;
     background: #FFFFFF;
     font-size: $f-size-l;

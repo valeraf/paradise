@@ -3,25 +3,6 @@
 
     <default>
         <reference name="root">
-            <reference name="head">
-                <action method="addLinkRel"><rel>stylesheet</rel><href>//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css</href></action>
-                <action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Open+Sans:400,700</href></action>
-                <action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=PT+Serif:400,700</href></action>
-                <block type="core/text" name="google.font.pt_serif">
-                    <action method="setText">
-                        <text>
-                            <![CDATA[<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>]]>
-                        </text>
-                    </action>
-                </block>
-                <block type="core/text" name="google.font.open_sans">
-                    <action method="setText">
-                        <text>
-                            <![CDATA[<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>]]>
-                        </text>
-                    </action>
-                </block>
-            </reference>
             <reference name="header">
                 <block type="page/switch" name="store_language" as="store_language" template="page/switch/flags.phtml"/>
             </reference>

@@ -100,7 +100,12 @@
         }
 
         .availability {
-            font-size: $f-size-xl;
+            font-size: $f-size-s;
+            .label {font-weight: bold}
+        }
+        .product-options-list {
+            @include clearfix;margin-bottom: 20px;
+            li {float: left;width: 210px;margin-right: $trim;}
         }
 
         .price-box {
@@ -116,7 +121,8 @@
             .regular-price .price,
             .special-price .price,
             .full-product-price .price {
-                color: $c-action;
+                color: $c-text;
+                font-weight: bold;
                 font-size: 24px;
             }
 
@@ -330,18 +336,18 @@
 
     .add-to-cart .qty-wrapper,
     .add-to-cart .qty-wrapper label {
-        margin-right: 7px;
-        float: left;
+        display: block;
     }
 
     .add-to-cart .qty-wrapper label {
-        line-height: 40px;
+        line-height: 34px;
     }
 
     .add-to-cart .qty-wrapper .qty {
-        float: left;
-        height: 40px;
+        height: 34px;
+        display: inline-block;vertical-align: top;margin: 0 -1px;position: relative;z-index: 1;
     }
+    .qty-minus, .qty-plus {display: inline-block;vertical-align: top;height: 34px;line-height: 34px;text-align: center;width: 30px;border: 1px solid $c-input-border;color: $c-text;cursor: pointer;}
 
     .add-to-cart-buttons {
         float: left;

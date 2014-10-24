@@ -1098,30 +1098,29 @@ h6, .h6 {
 .availability {
   margin-bottom: 0;
   font-size: 13px;
-  text-transform: uppercase;
 }
 
-/* line 114, ../scss/core/_common.scss */
+/* line 113, ../scss/core/_common.scss */
 .availability.in-stock {
   color: #333333;
 }
-/* line 116, ../scss/core/_common.scss */
+/* line 115, ../scss/core/_common.scss */
 .availability.in-stock .value {
   color: #11b400;
 }
 
-/* line 122, ../scss/core/_common.scss */
+/* line 121, ../scss/core/_common.scss */
 .availability.available-soon,
 .availability.out-of-stock {
   color: #333333;
 }
-/* line 124, ../scss/core/_common.scss */
+/* line 123, ../scss/core/_common.scss */
 .availability.available-soon .value,
 .availability.out-of-stock .value {
   color: red;
 }
 
-/* line 129, ../scss/core/_common.scss */
+/* line 128, ../scss/core/_common.scss */
 .availability-only {
   color: red;
   margin-bottom: 10px;
@@ -1130,13 +1129,12 @@ h6, .h6 {
 /* -------------------------------------------- *
  * Page Titles
  */
-/* line 141, ../scss/core/_common.scss */
+/* line 140, ../scss/core/_common.scss */
 .page-title h1,
 .page-title h2,
 .product-name h1,
 .product-name .h1 {
-  text-transform: uppercase;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #333333;
   border-bottom: 1px solid #e5e6ea;
@@ -1147,23 +1145,23 @@ h6, .h6 {
 /* -------------------------------------------- *
  * Block Module
  */
-/* line 150, ../scss/core/_common.scss */
+/* line 149, ../scss/core/_common.scss */
 .block,
 .col-left-first {
   margin-bottom: 20px;
 }
 
-/* line 154, ../scss/core/_common.scss */
+/* line 153, ../scss/core/_common.scss */
 .col-left-first .block:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 158, ../scss/core/_common.scss */
+/* line 157, ../scss/core/_common.scss */
 .block-title {
   position: relative;
   margin-bottom: 5px;
 }
-/* line 164, ../scss/core/_common.scss */
+/* line 163, ../scss/core/_common.scss */
 .block-title h2,
 .block-title h3,
 .block-title strong {
@@ -1180,65 +1178,65 @@ h6, .h6 {
   margin-bottom: 0;
   font-weight: 600;
 }
-/* line 170, ../scss/core/_common.scss */
+/* line 169, ../scss/core/_common.scss */
 .block-title small {
   font-size: 100%;
   font-weight: normal;
   color: #a0a0a0;
 }
 
-/* line 178, ../scss/core/_common.scss */
+/* line 177, ../scss/core/_common.scss */
 body:not(.customer-account) .block:first-child .block-title {
   border-top: none;
   padding-top: 0;
 }
 
-/* line 183, ../scss/core/_common.scss */
+/* line 182, ../scss/core/_common.scss */
 .block-subtitle {
   font-weight: bold;
   margin-bottom: 7px;
 }
 
-/* line 188, ../scss/core/_common.scss */
+/* line 187, ../scss/core/_common.scss */
 .block-content {
   margin-top: 5px;
 }
 
-/* line 192, ../scss/core/_common.scss */
+/* line 191, ../scss/core/_common.scss */
 .block-content.unpad {
   padding: 0;
 }
 
-/* line 196, ../scss/core/_common.scss */
+/* line 195, ../scss/core/_common.scss */
 .block-content li.item {
   margin: 0 0 10px 9px;
 }
 
-/* line 200, ../scss/core/_common.scss */
+/* line 199, ../scss/core/_common.scss */
 .block-content li.item:last-child {
   margin-bottom: 0;
 }
 
-/* line 204, ../scss/core/_common.scss */
+/* line 203, ../scss/core/_common.scss */
 .block .actions {
   margin: 10px 0 0;
 }
-/* line 207, ../scss/core/_common.scss */
+/* line 206, ../scss/core/_common.scss */
 .block .actions:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 211, ../scss/core/_common.scss */
+/* line 210, ../scss/core/_common.scss */
 .block .actions a {
   float: left;
 }
-/* line 214, ../scss/core/_common.scss */
+/* line 213, ../scss/core/_common.scss */
 .block .actions .button {
   float: right;
 }
 
-/* line 222, ../scss/core/_common.scss */
+/* line 221, ../scss/core/_common.scss */
 .col-left .block .actions .button ~ a,
 .col-right .block .actions .button ~ a {
   line-height: 33px;
@@ -1248,31 +1246,31 @@ body:not(.customer-account) .block:first-child .block-title {
 /* -------------------------------------------- *
  * Secondary Navigation
  */
-/* line 287, ../scss/core/_common.scss */
+/* line 286, ../scss/core/_common.scss */
 .block-account .block-title,
 .block-cms-menu .block-title {
   padding-top: 0;
   border-top: none;
 }
-/* line 292, ../scss/core/_common.scss */
+/* line 291, ../scss/core/_common.scss */
 .block-account li,
 .block-cms-menu li {
   text-transform: uppercase;
   font-family: "PT Serif", serif;
   margin: 7px 0;
 }
-/* line 297, ../scss/core/_common.scss */
+/* line 296, ../scss/core/_common.scss */
 .block-account li strong,
 .block-cms-menu li strong {
   font-weight: 400;
   color: #ec2b3b;
 }
-/* line 302, ../scss/core/_common.scss */
+/* line 301, ../scss/core/_common.scss */
 .block-account li a,
 .block-cms-menu li a {
   color: #333333;
 }
-/* line 305, ../scss/core/_common.scss */
+/* line 304, ../scss/core/_common.scss */
 .block-account li a:hover,
 .block-cms-menu li a:hover {
   color: #ec2b3b;
@@ -1282,7 +1280,7 @@ body:not(.customer-account) .block:first-child .block-title {
  * Buttons
  * ============================================ */
 /* Secondary Buttons */
-/* line 320, ../scss/core/_common.scss */
+/* line 319, ../scss/core/_common.scss */
 .cart .buttons-set .button,
 .cart-table .button,
 .sidebar .actions .button,
@@ -1291,7 +1289,7 @@ body:not(.customer-account) .block:first-child .block-title {
   color: #333333;
   padding: 7px 15px;
 }
-/* line 325, ../scss/core/_common.scss */
+/* line 324, ../scss/core/_common.scss */
 .cart .buttons-set .button:hover,
 .cart-table .button:hover,
 .sidebar .actions .button:hover,
@@ -1299,7 +1297,7 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #d0d0d0;
   cursor: pointer;
 }
-/* line 330, ../scss/core/_common.scss */
+/* line 329, ../scss/core/_common.scss */
 .cart .buttons-set .button:active,
 .cart-table .button:active,
 .sidebar .actions .button:active,
@@ -1307,7 +1305,7 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #c4c4c4;
   color: #333333;
 }
-/* line 335, ../scss/core/_common.scss */
+/* line 334, ../scss/core/_common.scss */
 .cart .buttons-set .button:focus,
 .cart-table .button:focus,
 .sidebar .actions .button:focus,
@@ -1318,7 +1316,7 @@ body:not(.customer-account) .block:first-child .block-title {
 }
 
 /* Primary Buttons */
-/* line 347, ../scss/core/_common.scss */
+/* line 346, ../scss/core/_common.scss */
 .button,
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
@@ -1338,18 +1336,18 @@ body:not(.customer-account) .block:first-child .block-title {
   white-space: nowrap;
 }
 
-/* line 363, ../scss/core/_common.scss */
+/* line 362, ../scss/core/_common.scss */
 a.button {
   text-decoration: none;
 }
 
-/* line 367, ../scss/core/_common.scss */
+/* line 366, ../scss/core/_common.scss */
 a.button:hover {
   color: #FFFFFF;
 }
 
 /* Disabled - class for anchor, state for form elements */
-/* line 373, ../scss/core/_common.scss */
+/* line 372, ../scss/core/_common.scss */
 .button.disabled,
 .button:disabled {
   background: #C8C8C8;
@@ -1358,12 +1356,12 @@ a.button:hover {
 }
 
 /* Adjacent buttons */
-/* line 380, ../scss/core/_common.scss */
+/* line 379, ../scss/core/_common.scss */
 .button + .button {
   margin-left: 5px;
 }
 
-/* line 394, ../scss/core/_common.scss */
+/* line 393, ../scss/core/_common.scss */
 .button2 {
   border: 0;
   padding: 0 5px;
@@ -1373,12 +1371,12 @@ a.button:hover {
   vertical-align: middle;
 }
 
-/* line 403, ../scss/core/_common.scss */
+/* line 402, ../scss/core/_common.scss */
 .button2:focus {
   outline: none;
 }
 
-/* line 408, ../scss/core/_common.scss */
+/* line 407, ../scss/core/_common.scss */
 .button2 span,
 .button2 span span {
   line-height: 30px;
@@ -1389,7 +1387,7 @@ a.button:hover {
   color: #ec2b3b;
   font-family: "PT Serif", serif;
 }
-/* line 417, ../scss/core/_common.scss */
+/* line 416, ../scss/core/_common.scss */
 .button2 span:hover,
 .button2 span span:hover {
   text-decoration: none;
@@ -1399,33 +1397,33 @@ a.button:hover {
 /* -------------------------------------------- *
  * Paypal Button
  */
-/* line 463, ../scss/core/_common.scss */
+/* line 462, ../scss/core/_common.scss */
 .paypal-logo.paypal-after {
   float: left;
 }
 
-/* line 467, ../scss/core/_common.scss */
+/* line 466, ../scss/core/_common.scss */
 .paypal-after .paypal-or {
   float: left;
 }
 
-/* line 471, ../scss/core/_common.scss */
+/* line 470, ../scss/core/_common.scss */
 .paypal-or {
   line-height: 40px;
   margin: 0px 10px 5px;
 }
 
-/* line 476, ../scss/core/_common.scss */
+/* line 475, ../scss/core/_common.scss */
 .paypal-after .paypal-button {
   float: left;
 }
 
-/* line 480, ../scss/core/_common.scss */
+/* line 479, ../scss/core/_common.scss */
 .paypal-button {
   line-height: 0px;
 }
 
-/* line 484, ../scss/core/_common.scss */
+/* line 483, ../scss/core/_common.scss */
 .paypal-button img {
   display: inline;
 }
@@ -1433,7 +1431,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Button Sets
  */
-/* line 509, ../scss/core/_common.scss */
+/* line 508, ../scss/core/_common.scss */
 .buttons-set {
   clear: both;
   margin: 10px 0 0;
@@ -1441,32 +1439,32 @@ a.button:hover {
   border-top: 1px solid #e5e6ea;
   text-align: right;
 }
-/* line 516, ../scss/core/_common.scss */
+/* line 515, ../scss/core/_common.scss */
 .buttons-set p.required {
   margin: 0;
   margin-left: 10px;
   line-height: 33px;
   float: right;
 }
-/* line 522, ../scss/core/_common.scss */
+/* line 521, ../scss/core/_common.scss */
 .buttons-set .back-link {
   float: left;
   margin: 0;
   line-height: 33px;
 }
-/* line 527, ../scss/core/_common.scss */
+/* line 526, ../scss/core/_common.scss */
 .buttons-set a:not(".button") {
   line-height: 20px;
   display: inline-block;
   padding: 5px;
 }
-/* line 532, ../scss/core/_common.scss */
+/* line 531, ../scss/core/_common.scss */
 .buttons-set button.button {
   float: right;
   margin-left: 5px;
   min-width: 140px;
 }
-/* line 538, ../scss/core/_common.scss */
+/* line 537, ../scss/core/_common.scss */
 .buttons-set:after {
   content: '';
   display: table;
@@ -1476,7 +1474,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Icons
  */
-/* line 547, ../scss/core/_common.scss */
+/* line 546, ../scss/core/_common.scss */
 .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
 .sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
   background-image: url(../images/icon_sprite.png);
@@ -1485,7 +1483,7 @@ a.button:hover {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 4 / 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  /* line 554, ../scss/core/_common.scss */
+  /* line 553, ../scss/core/_common.scss */
   .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
   .sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
     background-image: url(../images/icon_sprite@2x.png);
@@ -1495,7 +1493,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Breadcrumbs
  */
-/* line 564, ../scss/core/_common.scss */
+/* line 563, ../scss/core/_common.scss */
 .breadcrumbs {
   overflow: hidden;
   margin: -15px 0 32px;
@@ -1503,31 +1501,31 @@ a.button:hover {
   border-bottom: 1px solid #e5e6ea;
 }
 
-/* line 571, ../scss/core/_common.scss */
+/* line 570, ../scss/core/_common.scss */
 .breadcrumbs li {
   float: left;
   font-size: 12px;
   font-family: "PT Serif", serif;
 }
 
-/* line 577, ../scss/core/_common.scss */
+/* line 576, ../scss/core/_common.scss */
 .breadcrumbs a {
   float: left;
   color: #333333;
 }
 
-/* line 582, ../scss/core/_common.scss */
+/* line 581, ../scss/core/_common.scss */
 .breadcrumbs a:hover {
   color: #ec2b3b;
 }
 
-/* line 586, ../scss/core/_common.scss */
+/* line 585, ../scss/core/_common.scss */
 .breadcrumbs strong {
   color: #333333;
   font-weight: normal;
 }
 
-/* line 591, ../scss/core/_common.scss */
+/* line 590, ../scss/core/_common.scss */
 .breadcrumbs span {
   float: left;
   padding: 0 7px;
@@ -1536,7 +1534,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Button - Remove / Previous
  */
-/* line 609, ../scss/core/_common.scss */
+/* line 608, ../scss/core/_common.scss */
 .btn-remove,
 .btn-previous {
   display: inline-block;
@@ -1550,14 +1548,14 @@ a.button:hover {
   color: transparent;
   position: relative;
 }
-/* line 621, ../scss/core/_common.scss */
+/* line 620, ../scss/core/_common.scss */
 .btn-remove:hover,
 .btn-previous:hover {
   background-color: #ec2b3b;
   border-color: #ec2b3b;
 }
 
-/* line 628, ../scss/core/_common.scss */
+/* line 627, ../scss/core/_common.scss */
 .btn-remove:after {
   content: 'X';
   color: #ec2b3b;
@@ -1568,30 +1566,30 @@ a.button:hover {
   font-family: Arial, "Open Sans", sans-serif;
   font-weight: bold;
 }
-/* line 638, ../scss/core/_common.scss */
+/* line 637, ../scss/core/_common.scss */
 .btn-remove:hover:after {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 644, ../scss/core/_common.scss */
+/* line 643, ../scss/core/_common.scss */
 .btn-remove2 {
   background-position: 4px -648px;
   border: none;
   vertical-align: top;
 }
-/* line 651, ../scss/core/_common.scss */
+/* line 650, ../scss/core/_common.scss */
 .btn-remove2:after {
   display: none;
 }
-/* line 654, ../scss/core/_common.scss */
+/* line 653, ../scss/core/_common.scss */
 .btn-remove2:hover {
   background-color: transparent;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 661, ../scss/core/_common.scss */
+/* line 660, ../scss/core/_common.scss */
 .btn-previous:after {
   content: '';
   position: absolute;
@@ -1608,7 +1606,7 @@ a.button:hover {
   margin-left: -2px;
   margin-top: -4px;
 }
-/* line 669, ../scss/core/_common.scss */
+/* line 668, ../scss/core/_common.scss */
 .btn-previous:hover:after {
   content: '';
   position: absolute;
@@ -1621,7 +1619,7 @@ a.button:hover {
   border-left: none;
 }
 
-/* line 679, ../scss/core/_common.scss */
+/* line 678, ../scss/core/_common.scss */
 .block-layered-nav .currently .btn-remove,
 .block-layered-nav .currently .btn-previous,
 .mini-products-list .btn-remove,
@@ -1635,12 +1633,12 @@ a.button:hover {
 /* -------------------------------------------- *
  * Checkout Agreements
  */
-/* line 689, ../scss/core/_common.scss */
+/* line 688, ../scss/core/_common.scss */
 .checkout-agreements li {
   margin-bottom: 20px;
 }
 
-/* line 693, ../scss/core/_common.scss */
+/* line 692, ../scss/core/_common.scss */
 .checkout-agreements .agreement-content {
   overflow-y: auto;
   max-width: 670px;
@@ -1654,7 +1652,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * CVV Security Code
  */
-/* line 707, ../scss/core/_common.scss */
+/* line 706, ../scss/core/_common.scss */
 .cvv-what-is-this {
   margin-left: 10px;
   font-size: 13px;
@@ -1664,7 +1662,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Container
  */
-/* line 718, ../scss/core/_common.scss */
+/* line 717, ../scss/core/_common.scss */
 .main-container,
 .footer-container {
   position: relative;
@@ -1672,7 +1670,7 @@ a.button:hover {
   margin: 0 auto;
   padding: 15px;
 }
-/* line 724, ../scss/core/_common.scss */
+/* line 723, ../scss/core/_common.scss */
 .main-container:after,
 .footer-container:after {
   content: '';
@@ -1680,13 +1678,13 @@ a.button:hover {
   clear: both;
 }
 
-/* line 732, ../scss/core/_common.scss */
+/* line 731, ../scss/core/_common.scss */
 .main-container,
 .footer-container {
   padding: 30px;
 }
 
-/* line 737, ../scss/core/_common.scss */
+/* line 736, ../scss/core/_common.scss */
 .footer-container {
   padding-top: 0px;
 }
@@ -1694,7 +1692,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Column Layouts
  */
-/* line 746, ../scss/core/_common.scss */
+/* line 745, ../scss/core/_common.scss */
 .main:after,
 .col-wrapper:after {
   content: '';
@@ -1702,14 +1700,14 @@ a.button:hover {
   clear: both;
 }
 
-/* line 752, ../scss/core/_common.scss */
+/* line 751, ../scss/core/_common.scss */
 .col-left,
 .col-right,
 .col-main {
   padding: 0 10px;
 }
 
-/* line 756, ../scss/core/_common.scss */
+/* line 755, ../scss/core/_common.scss */
 .col-left {
   float: left;
   width: 25%;
@@ -1717,30 +1715,30 @@ a.button:hover {
   /* Remove the 15px padding */
   clear: left;
 }
-/* line 762, ../scss/core/_common.scss */
+/* line 761, ../scss/core/_common.scss */
 .col-left img {
   max-width: 100%;
 }
 
-/* line 767, ../scss/core/_common.scss */
+/* line 766, ../scss/core/_common.scss */
 .col-right {
   float: right;
   width: 25%;
   padding-right: 0;
   /* Remove the 15px padding */
 }
-/* line 772, ../scss/core/_common.scss */
+/* line 771, ../scss/core/_common.scss */
 .col-right img {
   max-width: 100%;
 }
 
-/* line 777, ../scss/core/_common.scss */
+/* line 776, ../scss/core/_common.scss */
 .col-main {
   float: left;
   width: 75%;
 }
 
-/* line 783, ../scss/core/_common.scss */
+/* line 782, ../scss/core/_common.scss */
 .col1-layout .col-main {
   float: none;
   width: auto;
@@ -1748,68 +1746,68 @@ a.button:hover {
   /* Remove the 15px padding */
 }
 
-/* line 791, ../scss/core/_common.scss */
+/* line 790, ../scss/core/_common.scss */
 .col2-left-layout .col-main {
   float: right;
   padding-right: 0;
   /* Remove the 15px padding */
 }
 
-/* line 798, ../scss/core/_common.scss */
+/* line 797, ../scss/core/_common.scss */
 .col2-right-layout .col-main {
   padding-left: 0;
   /* Remove the 15px padding */
 }
 
-/* line 804, ../scss/core/_common.scss */
+/* line 803, ../scss/core/_common.scss */
 .col3-layout .col-right {
   width: 20.83333%;
 }
-/* line 808, ../scss/core/_common.scss */
+/* line 807, ../scss/core/_common.scss */
 .col3-layout .col-wrapper {
   float: left;
   width: 79.16667%;
 }
-/* line 812, ../scss/core/_common.scss */
+/* line 811, ../scss/core/_common.scss */
 .col3-layout .col-wrapper .col-main {
   float: right;
   width: 73.68421%;
 }
-/* line 817, ../scss/core/_common.scss */
+/* line 816, ../scss/core/_common.scss */
 .col3-layout .col-wrapper .col-left {
   width: 26.31579%;
 }
 
 /* Content Columns */
-/* line 888, ../scss/core/_common.scss */
+/* line 887, ../scss/core/_common.scss */
 .col2-set {
   width: 100%;
 }
-/* line 892, ../scss/core/_common.scss */
+/* line 891, ../scss/core/_common.scss */
 .col2-set .col-1,
 .col2-set .col-2 {
   width: 50%;
   padding: 20px;
 }
-/* line 901, ../scss/core/_common.scss */
+/* line 900, ../scss/core/_common.scss */
 .col2-set .col-1 {
   float: left;
   padding-left: 0;
 }
-/* line 906, ../scss/core/_common.scss */
+/* line 905, ../scss/core/_common.scss */
 .col2-set .col-2 {
   float: right;
   padding-right: 0;
 }
-/* line 922, ../scss/core/_common.scss */
+/* line 921, ../scss/core/_common.scss */
 .col2-set .narrow {
   width: 33%;
 }
-/* line 926, ../scss/core/_common.scss */
+/* line 925, ../scss/core/_common.scss */
 .col2-set .wide {
   width: 65%;
 }
-/* line 930, ../scss/core/_common.scss */
+/* line 929, ../scss/core/_common.scss */
 .col2-set:after {
   content: '';
   display: table;
@@ -1819,7 +1817,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Top Container
  */
-/* line 939, ../scss/core/_common.scss */
+/* line 938, ../scss/core/_common.scss */
 .top-container {
   max-width: 1240px;
   margin: 0 auto;
@@ -1829,13 +1827,13 @@ a.button:hover {
 /* -------------------------------------------- *
  * Global Site Notice
  */
-/* line 950, ../scss/core/_common.scss */
+/* line 949, ../scss/core/_common.scss */
 .global-site-notice {
   background: #414141;
   color: #e6e6e6;
   font-size: 11px;
 }
-/* line 955, ../scss/core/_common.scss */
+/* line 954, ../scss/core/_common.scss */
 .global-site-notice .notice-inner {
   padding-left: 120px;
   width: 100%;
@@ -1850,7 +1848,7 @@ a.button:hover {
   background-position: left;
   background-repeat: no-repeat;
 }
-/* line 970, ../scss/core/_common.scss */
+/* line 969, ../scss/core/_common.scss */
 .global-site-notice p {
   margin-bottom: 0;
 }
@@ -1858,7 +1856,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Promotional Message Banner
  */
-/* line 979, ../scss/core/_common.scss */
+/* line 978, ../scss/core/_common.scss */
 .promo-msg {
   color: #3399cc;
   text-align: center;
@@ -1870,7 +1868,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Grid
  */
-/* line 991, ../scss/core/_common.scss */
+/* line 990, ../scss/core/_common.scss */
 .grid:after {
   content: '';
   display: table;
@@ -1880,18 +1878,18 @@ a.button:hover {
 /* -------------------------------------------- *
  * Messages
  */
-/* line 998, ../scss/core/_common.scss */
+/* line 997, ../scss/core/_common.scss */
 .success {
   color: #11b400;
 }
 
-/* line 1002, ../scss/core/_common.scss */
+/* line 1001, ../scss/core/_common.scss */
 .error {
   color: red;
   font-weight: bold;
 }
 
-/* line 1007, ../scss/core/_common.scss */
+/* line 1006, ../scss/core/_common.scss */
 .notice {
   color: #e26703;
   font-weight: bold;
@@ -1900,12 +1898,12 @@ a.button:hover {
 /* -------------------------------------------- *
  * Messages
  */
-/* line 1016, ../scss/core/_common.scss */
+/* line 1015, ../scss/core/_common.scss */
 .messages {
   margin-bottom: 10px;
 }
 
-/* line 1020, ../scss/core/_common.scss */
+/* line 1019, ../scss/core/_common.scss */
 .messages li li {
   position: relative;
   margin-bottom: 5px;
@@ -1913,19 +1911,19 @@ a.button:hover {
   background: #f4f4f4;
 }
 
-/* line 1027, ../scss/core/_common.scss */
+/* line 1026, ../scss/core/_common.scss */
 .messages li li:before {
   top: 50%;
   left: 0;
   margin-top: -6px;
 }
 
-/* line 1033, ../scss/core/_common.scss */
+/* line 1032, ../scss/core/_common.scss */
 .messages .error-msg li {
   border-left: 5px solid red;
 }
 
-/* line 1037, ../scss/core/_common.scss */
+/* line 1036, ../scss/core/_common.scss */
 .messages .error-msg li:before {
   content: '';
   position: absolute;
@@ -1938,12 +1936,12 @@ a.button:hover {
   border-right: none;
 }
 
-/* line 1041, ../scss/core/_common.scss */
+/* line 1040, ../scss/core/_common.scss */
 .messages .notice-msg li {
   border-left: 5px solid #e26703;
 }
 
-/* line 1045, ../scss/core/_common.scss */
+/* line 1044, ../scss/core/_common.scss */
 .messages .notice-msg li:before {
   content: '';
   position: absolute;
@@ -1956,12 +1954,12 @@ a.button:hover {
   border-right: none;
 }
 
-/* line 1049, ../scss/core/_common.scss */
+/* line 1048, ../scss/core/_common.scss */
 .messages .success-msg li {
   border-left: 5px solid #11b400;
 }
 
-/* line 1053, ../scss/core/_common.scss */
+/* line 1052, ../scss/core/_common.scss */
 .messages .success-msg li:before {
   content: '';
   position: absolute;
@@ -1974,18 +1972,18 @@ a.button:hover {
   border-right: none;
 }
 
-/* line 1061, ../scss/core/_common.scss */
+/* line 1060, ../scss/core/_common.scss */
 .order-list-grid .col-1 {
   width: 30%;
 }
 
-/* line 1065, ../scss/core/_common.scss */
+/* line 1064, ../scss/core/_common.scss */
 .order-list-grid .col-2 {
   width: 50%;
   padding-right: 20px;
 }
 
-/* line 1070, ../scss/core/_common.scss */
+/* line 1069, ../scss/core/_common.scss */
 .order-list-grid .col-3 {
   clear: none;
   width: 20%;
@@ -1995,14 +1993,14 @@ a.button:hover {
 /* -------------------------------------------- *
  * Page Popup
  */
-/* line 1082, ../scss/core/_common.scss */
+/* line 1081, ../scss/core/_common.scss */
 .page-popup {
   padding: 20px;
   background: #FFFFFF;
   height: auto;
 }
 
-/* line 1088, ../scss/core/_common.scss */
+/* line 1087, ../scss/core/_common.scss */
 .page-popup h1 {
   margin: 0 0 0.5em;
   font-size: 36px;
@@ -2011,22 +2009,22 @@ a.button:hover {
 /* -------------------------------------------- *
  * Payment Methods
  */
-/* line 1097, ../scss/core/_common.scss */
+/* line 1096, ../scss/core/_common.scss */
 .payment-methods {
   margin-bottom: 20px;
 }
 
-/* line 1101, ../scss/core/_common.scss */
+/* line 1100, ../scss/core/_common.scss */
 .payment-methods dt {
   padding: 5px 0;
 }
 
-/* line 1105, ../scss/core/_common.scss */
+/* line 1104, ../scss/core/_common.scss */
 .payment-methods dd {
   padding-top: 10px;
 }
 
-/* line 1109, ../scss/core/_common.scss */
+/* line 1108, ../scss/core/_common.scss */
 .payment-methods .form-list {
   position: relative;
   display: inline-block;
@@ -2037,7 +2035,7 @@ a.button:hover {
   background: #f4f4f4;
 }
 
-/* line 1119, ../scss/core/_common.scss */
+/* line 1118, ../scss/core/_common.scss */
 .payment-methods .form-list:before {
   content: '';
   position: absolute;
@@ -2052,7 +2050,7 @@ a.button:hover {
   left: 30px;
 }
 
-/* line 1125, ../scss/core/_common.scss */
+/* line 1124, ../scss/core/_common.scss */
 .payment-methods .form-list:after {
   content: '';
   position: absolute;
@@ -2067,7 +2065,7 @@ a.button:hover {
   left: 30px;
 }
 
-/* line 1131, ../scss/core/_common.scss */
+/* line 1130, ../scss/core/_common.scss */
 .payment-methods .form-list li:last-child {
   margin-bottom: 0;
 }
@@ -2075,7 +2073,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Please Wait (Loading Indicator)
  */
-/* line 1139, ../scss/core/_common.scss */
+/* line 1138, ../scss/core/_common.scss */
 .please-wait {
   display: inline-block;
   margin-left: 10px;
@@ -2085,7 +2083,7 @@ a.button:hover {
   white-space: nowrap;
   /* Prevent the linebreak in the HTML from causing layout issues */
 }
-/* line 1147, ../scss/core/_common.scss */
+/* line 1146, ../scss/core/_common.scss */
 .please-wait img {
   float: left;
   margin-right: 5px;
@@ -2095,50 +2093,50 @@ a.button:hover {
 /* -------------------------------------------- *
  * Price Box - Standard
  */
-/* line 1158, ../scss/core/_common.scss */
+/* line 1157, ../scss/core/_common.scss */
 .price-box {
   margin: 7px 0;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1163, ../scss/core/_common.scss */
+/* line 1162, ../scss/core/_common.scss */
 .price-box p {
   margin-bottom: 0;
 }
 
-/* line 1167, ../scss/core/_common.scss */
+/* line 1166, ../scss/core/_common.scss */
 .price-notice {
   color: #a0a0a0;
 }
 
-/* line 1171, ../scss/core/_common.scss */
+/* line 1170, ../scss/core/_common.scss */
 .price-box .price {
   color: #3399cc;
   font-size: 16px;
 }
 
-/* line 1177, ../scss/core/_common.scss */
+/* line 1176, ../scss/core/_common.scss */
 .price-box .price,
 .price {
   white-space: nowrap;
   font-family: "PT Serif", serif;
 }
 
-/* line 1182, ../scss/core/_common.scss */
+/* line 1181, ../scss/core/_common.scss */
 .price-box .price-label {
   color: #a0a0a0;
   white-space: nowrap;
   font-family: "PT Serif", serif;
 }
 
-/* line 1188, ../scss/core/_common.scss */
+/* line 1187, ../scss/core/_common.scss */
 .price-box .minimal-price-link {
   padding-left: 1em;
   color: #3399cc;
   display: block;
   /* We want this to show on its own line, otherwise the layout looks funky */
 }
-/* line 1193, ../scss/core/_common.scss */
+/* line 1192, ../scss/core/_common.scss */
 .price-box .minimal-price-link .label {
   color: #a0a0a0;
 }
@@ -2146,34 +2144,34 @@ a.button:hover {
 /* -------------------------------------------- *
  * Price Box - Special
  */
-/* line 1203, ../scss/core/_common.scss */
+/* line 1202, ../scss/core/_common.scss */
 .price-box .old-price,
 .price-box .special-price {
   display: inline-block;
 }
-/* line 1206, ../scss/core/_common.scss */
+/* line 1205, ../scss/core/_common.scss */
 .price-box .old-price .price-label,
 .price-box .special-price .price-label {
   display: none;
 }
-/* line 1210, ../scss/core/_common.scss */
+/* line 1209, ../scss/core/_common.scss */
 .price-box .old-price .price,
 .price-box .special-price .price {
   display: inline-block;
 }
 
-/* line 1216, ../scss/core/_common.scss */
+/* line 1215, ../scss/core/_common.scss */
 .price-box .old-price .price {
   color: #a0a0a0;
   text-decoration: line-through;
 }
 
-/* line 1222, ../scss/core/_common.scss */
+/* line 1221, ../scss/core/_common.scss */
 .price-box .special-price {
   color: #3399cc;
   padding-left: 1em;
 }
-/* line 1226, ../scss/core/_common.scss */
+/* line 1225, ../scss/core/_common.scss */
 .price-box .special-price .price-label {
   color: #D84D3C;
 }
@@ -2181,7 +2179,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Price Box - Taxes
  */
-/* line 1236, ../scss/core/_common.scss */
+/* line 1235, ../scss/core/_common.scss */
 .price-box .price-excluding-tax,
 .price-box .price-including-tax {
   display: block;
@@ -2190,7 +2188,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Tier Prices
  */
-/* line 1246, ../scss/core/_common.scss */
+/* line 1245, ../scss/core/_common.scss */
 .product-pricing,
 .tier-prices,
 .tier-prices-grouped {
@@ -2200,19 +2198,19 @@ a.button:hover {
   border: 1px solid #E2D4C7;
   margin-top: 7px;
 }
-/* line 1253, ../scss/core/_common.scss */
+/* line 1252, ../scss/core/_common.scss */
 .product-pricing li,
 .tier-prices li,
 .tier-prices-grouped li {
   font-size: 12px;
 }
-/* line 1256, ../scss/core/_common.scss */
+/* line 1255, ../scss/core/_common.scss */
 .product-pricing .benefit,
 .tier-prices .benefit,
 .tier-prices-grouped .benefit {
   font-style: italic;
 }
-/* line 1259, ../scss/core/_common.scss */
+/* line 1258, ../scss/core/_common.scss */
 .product-pricing .price,
 .tier-prices .price,
 .tier-prices-grouped .price {
@@ -2222,18 +2220,18 @@ a.button:hover {
 /* ============================================ *
  * Item Options
  * ============================================ */
-/* line 1268, ../scss/core/_common.scss */
+/* line 1267, ../scss/core/_common.scss */
 .item-options {
   font-size: 14px;
   font-family: "PT Serif", serif;
 }
-/* line 1272, ../scss/core/_common.scss */
+/* line 1271, ../scss/core/_common.scss */
 .item-options:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 1276, ../scss/core/_common.scss */
+/* line 1275, ../scss/core/_common.scss */
 .item-options dt {
   float: left;
   clear: left;
@@ -2241,41 +2239,41 @@ a.button:hover {
   padding-right: 5px;
   font-style: italic;
 }
-/* line 1283, ../scss/core/_common.scss */
+/* line 1282, ../scss/core/_common.scss */
 .item-options dt:after {
   content: ': ';
 }
-/* line 1288, ../scss/core/_common.scss */
+/* line 1287, ../scss/core/_common.scss */
 .item-options dd {
   float: left;
   padding-left: 10px;
   margin: 0 0 6px;
 }
 
-/* line 1296, ../scss/core/_common.scss */
+/* line 1295, ../scss/core/_common.scss */
 .truncated,
 .truncated a.dots {
   cursor: help;
 }
 
-/* line 1300, ../scss/core/_common.scss */
+/* line 1299, ../scss/core/_common.scss */
 .truncated a.details {
   cursor: help;
   height: 16px;
   line-height: 16px;
 }
-/* line 1305, ../scss/core/_common.scss */
+/* line 1304, ../scss/core/_common.scss */
 .truncated a.details:hover {
   text-decoration: none;
 }
 
-/* line 1310, ../scss/core/_common.scss */
+/* line 1309, ../scss/core/_common.scss */
 .truncated .truncated_full_value {
   position: relative;
   z-index: 300;
 }
 
-/* line 1315, ../scss/core/_common.scss */
+/* line 1314, ../scss/core/_common.scss */
 .truncated .truncated_full_value .item-options {
   display: none;
   position: absolute;
@@ -2287,7 +2285,7 @@ a.button:hover {
   top: 21px;
   left: -100px;
 }
-/* line 1326, ../scss/core/_common.scss */
+/* line 1325, ../scss/core/_common.scss */
 .truncated .truncated_full_value .item-options:after {
   content: '';
   position: absolute;
@@ -2302,14 +2300,14 @@ a.button:hover {
   top: -7px;
 }
 
-/* line 1333, ../scss/core/_common.scss */
+/* line 1332, ../scss/core/_common.scss */
 .truncated .truncated_full_value .item-options > p {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-/* line 1339, ../scss/core/_common.scss */
+/* line 1338, ../scss/core/_common.scss */
 .truncated .show .item-options {
   display: block;
 }
@@ -2317,7 +2315,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Printer Friendly Page
  */
-/* line 1378, ../scss/core/_common.scss */
+/* line 1377, ../scss/core/_common.scss */
 .page-print {
   width: 6.5in;
   margin: 20px;
@@ -2327,17 +2325,17 @@ a.button:hover {
 /* -------------------------------------------- *
  * Add to links
  */
-/* line 1388, ../scss/core/_common.scss */
+/* line 1387, ../scss/core/_common.scss */
 .add-to-links {
   margin: 7px 0;
 }
-/* line 1391, ../scss/core/_common.scss */
+/* line 1390, ../scss/core/_common.scss */
 .add-to-links a {
   display: inline-block;
   padding: 0px 3px 3px;
 }
 
-/* line 1397, ../scss/core/_common.scss */
+/* line 1396, ../scss/core/_common.scss */
 .add-to-links .separator {
   display: none;
 }
@@ -2345,7 +2343,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Product Image
  */
-/* line 1406, ../scss/core/_common.scss */
+/* line 1405, ../scss/core/_common.scss */
 .product-image,
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
   position: relative;
@@ -2353,7 +2351,7 @@ a.button:hover {
   border: 1px solid #e5e6ea;
 }
 
-/* line 1412, ../scss/core/_common.scss */
+/* line 1411, ../scss/core/_common.scss */
 .no-touch .product-image:hover {
   border-color: #3399cc;
 }
@@ -2361,16 +2359,16 @@ a.button:hover {
 /* -------------------------------------------- *
  * Ratings
  */
-/* line 1420, ../scss/core/_common.scss */
+/* line 1419, ../scss/core/_common.scss */
 .ratings {
   margin: 7px 0;
 }
-/* line 1424, ../scss/core/_common.scss */
+/* line 1423, ../scss/core/_common.scss */
 .ratings .rating-box,
 .ratings .rating-links {
   margin: 5px 0;
 }
-/* line 1428, ../scss/core/_common.scss */
+/* line 1427, ../scss/core/_common.scss */
 .ratings .rating-box {
   width: 65px;
   height: 13px;
@@ -2378,19 +2376,19 @@ a.button:hover {
   background-position: 0 -615px;
   overflow: hidden;
 }
-/* line 1436, ../scss/core/_common.scss */
+/* line 1435, ../scss/core/_common.scss */
 .ratings .rating-box .rating {
   float: left;
   height: 13px;
   background-repeat: repeat-x;
   background-position: 0 -600px;
 }
-/* line 1443, ../scss/core/_common.scss */
+/* line 1442, ../scss/core/_common.scss */
 .ratings .amount {
   display: block;
   margin: 5px auto;
 }
-/* line 1449, ../scss/core/_common.scss */
+/* line 1448, ../scss/core/_common.scss */
 .ratings .rating-links .separator {
   margin: 0 3px;
 }
@@ -2398,34 +2396,34 @@ a.button:hover {
 /* -------------------------------------------- *
  * Standard Formatted Text Block
  */
-/* line 1459, ../scss/core/_common.scss */
+/* line 1458, ../scss/core/_common.scss */
 .std p {
   margin: 0 0 1.5em;
 }
 
-/* line 1463, ../scss/core/_common.scss */
+/* line 1462, ../scss/core/_common.scss */
 .std ol {
   list-style: decimal outside;
   margin-bottom: 1.5em;
 }
 
-/* line 1468, ../scss/core/_common.scss */
+/* line 1467, ../scss/core/_common.scss */
 .std ol li {
   margin-left: 2em;
 }
 
-/* line 1472, ../scss/core/_common.scss */
+/* line 1471, ../scss/core/_common.scss */
 .std ul {
   list-style: disc outside;
   margin-bottom: 1.5em;
 }
 
-/* line 1477, ../scss/core/_common.scss */
+/* line 1476, ../scss/core/_common.scss */
 .std ul li {
   margin-left: 2em;
 }
 
-/* line 1481, ../scss/core/_common.scss */
+/* line 1480, ../scss/core/_common.scss */
 .std .note {
   color: #a0a0a0;
   font-size: 13px;
@@ -2434,7 +2432,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Tabs
  */
-/* line 1490, ../scss/core/_common.scss */
+/* line 1489, ../scss/core/_common.scss */
 .tabs {
   margin-bottom: 10px;
   background: #FFFFFF;
@@ -2443,7 +2441,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Toolbar
  */
-/* line 1499, ../scss/core/_common.scss */
+/* line 1498, ../scss/core/_common.scss */
 .toolbar {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -2452,24 +2450,24 @@ a.button:hover {
   background: #f4f4f4;
   padding: 5px 10px 0px 10px;
 }
-/* line 1507, ../scss/core/_common.scss */
+/* line 1506, ../scss/core/_common.scss */
 .toolbar:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 1512, ../scss/core/_common.scss */
+/* line 1511, ../scss/core/_common.scss */
 .pager-no-toolbar {
   margin-bottom: 10px;
 }
 
-/* line 1517, ../scss/core/_common.scss */
+/* line 1516, ../scss/core/_common.scss */
 .pager-no-toolbar ~ .pager-no-toolbar {
   margin-top: 10px;
 }
 
-/* line 1522, ../scss/core/_common.scss */
+/* line 1521, ../scss/core/_common.scss */
 .toolbar,
 .pager {
   font-family: "PT Serif", serif;
@@ -2478,142 +2476,142 @@ a.button:hover {
   font-size: 12px;
 }
 
-/* line 1530, ../scss/core/_common.scss */
+/* line 1529, ../scss/core/_common.scss */
 .toolbar label,
 .pager-no-toolbar label {
   font-weight: normal;
   text-transform: uppercase;
 }
 
-/* line 1537, ../scss/core/_common.scss */
+/* line 1536, ../scss/core/_common.scss */
 .sorter {
   float: left;
   margin-bottom: 5px;
 }
-/* line 1541, ../scss/core/_common.scss */
+/* line 1540, ../scss/core/_common.scss */
 .sorter label {
   float: left;
   margin-right: 5px;
 }
-/* line 1545, ../scss/core/_common.scss */
+/* line 1544, ../scss/core/_common.scss */
 .sorter label:after {
   content: ':';
 }
 
-/* line 1551, ../scss/core/_common.scss */
+/* line 1550, ../scss/core/_common.scss */
 .sorter > .sort-by {
   float: left;
   margin-right: 5px;
   height: 30px;
 }
-/* line 1556, ../scss/core/_common.scss */
+/* line 1555, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher {
   width: 30px;
   height: 30px;
   display: inline-block;
 }
-/* line 1562, ../scss/core/_common.scss */
+/* line 1561, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--asc {
   background-position: 4px -542px;
 }
-/* line 1564, ../scss/core/_common.scss */
+/* line 1563, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--asc:hover {
   background-position: -46px -542px;
 }
-/* line 1568, ../scss/core/_common.scss */
+/* line 1567, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--desc {
   background-position: 4px -567px;
 }
-/* line 1570, ../scss/core/_common.scss */
+/* line 1569, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--desc:hover {
   background-position: -46px -567px;
 }
 
-/* line 1576, ../scss/core/_common.scss */
+/* line 1575, ../scss/core/_common.scss */
 .sorter > .view-mode {
   float: right;
 }
-/* line 1580, ../scss/core/_common.scss */
+/* line 1579, ../scss/core/_common.scss */
 .sorter > .view-mode .grid,
 .sorter > .view-mode .list {
   float: left;
   width: 30px;
   height: 30px;
 }
-/* line 1586, ../scss/core/_common.scss */
+/* line 1585, ../scss/core/_common.scss */
 .sorter > .view-mode .grid {
   margin-right: 5px;
   background-position: 8px -492px;
 }
-/* line 1591, ../scss/core/_common.scss */
+/* line 1590, ../scss/core/_common.scss */
 .sorter > .view-mode strong.grid,
 .sorter > .view-mode a.grid:hover {
   background-position: -42px -492px;
 }
-/* line 1594, ../scss/core/_common.scss */
+/* line 1593, ../scss/core/_common.scss */
 .sorter > .view-mode .list {
   background-position: 11px -517px;
 }
-/* line 1599, ../scss/core/_common.scss */
+/* line 1598, ../scss/core/_common.scss */
 .sorter > .view-mode strong.list,
 .sorter > .view-mode a.list:hover {
   background-position: -39px -517px;
 }
 
-/* line 1604, ../scss/core/_common.scss */
+/* line 1603, ../scss/core/_common.scss */
 .pager {
   float: right;
   overflow: hidden;
 }
-/* line 1608, ../scss/core/_common.scss */
+/* line 1607, ../scss/core/_common.scss */
 .pager > .count-container {
   float: left;
 }
-/* line 1612, ../scss/core/_common.scss */
+/* line 1611, ../scss/core/_common.scss */
 .pager .amount {
   float: left;
   font-family: "Open Sans", sans-serif;
   white-space: nowrap;
   margin: 0 15px 0 0;
 }
-/* line 1619, ../scss/core/_common.scss */
+/* line 1618, ../scss/core/_common.scss */
 .pager .limiter {
   float: left;
   height: 30px;
   line-height: 30px;
 }
-/* line 1624, ../scss/core/_common.scss */
+/* line 1623, ../scss/core/_common.scss */
 .pager .limiter > label {
   padding-right: 5px;
 }
-/* line 1627, ../scss/core/_common.scss */
+/* line 1626, ../scss/core/_common.scss */
 .pager .limiter > label:after {
   content: ':';
 }
-/* line 1635, ../scss/core/_common.scss */
+/* line 1634, ../scss/core/_common.scss */
 .pager .amount,
 .pager .limiter,
 .pager .pages {
   margin-bottom: 5px;
 }
 
-/* line 1641, ../scss/core/_common.scss */
+/* line 1640, ../scss/core/_common.scss */
 .pages {
   float: right;
   overflow: hidden;
   margin-left: 15px;
 }
-/* line 1646, ../scss/core/_common.scss */
+/* line 1645, ../scss/core/_common.scss */
 .pages strong {
   display: none;
 }
 
-/* line 1651, ../scss/core/_common.scss */
+/* line 1650, ../scss/core/_common.scss */
 .pages li {
   float: left;
 }
 
-/* line 1656, ../scss/core/_common.scss */
+/* line 1655, ../scss/core/_common.scss */
 .pages a,
 .pages .current {
   display: inline-block;
@@ -2631,7 +2629,7 @@ a.button:hover {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1673, ../scss/core/_common.scss */
+/* line 1672, ../scss/core/_common.scss */
 .pages .current,
 .pages .current:hover {
   color: #333333;
@@ -2641,7 +2639,7 @@ a.button:hover {
   cursor: default;
 }
 
-/* line 1682, ../scss/core/_common.scss */
+/* line 1681, ../scss/core/_common.scss */
 .pages .next,
 .pages .previous {
   font: 0/0 a;
@@ -2650,13 +2648,13 @@ a.button:hover {
   background-color: transparent;
   position: relative;
 }
-/* line 1690, ../scss/core/_common.scss */
+/* line 1689, ../scss/core/_common.scss */
 .pages .next:hover,
 .pages .previous:hover {
   border: 1px solid #ec2b3b;
 }
 
-/* line 1696, ../scss/core/_common.scss */
+/* line 1695, ../scss/core/_common.scss */
 .pages .next:before {
   content: '';
   position: absolute;
@@ -2672,7 +2670,7 @@ a.button:hover {
   left: 50%;
   margin-left: -2px;
 }
-/* line 1703, ../scss/core/_common.scss */
+/* line 1702, ../scss/core/_common.scss */
 .pages .next:hover:before {
   content: '';
   position: absolute;
@@ -2685,7 +2683,7 @@ a.button:hover {
   border-right: none;
 }
 
-/* line 1709, ../scss/core/_common.scss */
+/* line 1708, ../scss/core/_common.scss */
 .pages .previous:before {
   content: '';
   position: absolute;
@@ -2701,7 +2699,7 @@ a.button:hover {
   left: 50%;
   margin-left: -2px;
 }
-/* line 1716, ../scss/core/_common.scss */
+/* line 1715, ../scss/core/_common.scss */
 .pages .previous:hover:before {
   content: '';
   position: absolute;
@@ -2714,7 +2712,7 @@ a.button:hover {
   border-left: none;
 }
 
-/* line 1790, ../scss/core/_common.scss */
+/* line 1789, ../scss/core/_common.scss */
 .toolbar .view-mode > label {
   display: none;
 }
@@ -2722,14 +2720,14 @@ a.button:hover {
 /* ============================================ *
  * Tax - Full Tax Summary
  * ============================================ */
-/* line 1802, ../scss/core/_common.scss */
+/* line 1801, ../scss/core/_common.scss */
 #checkout-review-table .summary-collapse,
 #shopping-cart-totals-table .summary-collapse,
 body.customer-account .data-table .summary-collapse {
   position: relative;
   cursor: pointer;
 }
-/* line 1806, ../scss/core/_common.scss */
+/* line 1805, ../scss/core/_common.scss */
 #checkout-review-table .summary-collapse:before,
 #shopping-cart-totals-table .summary-collapse:before,
 body.customer-account .data-table .summary-collapse:before {
@@ -2746,7 +2744,7 @@ body.customer-account .data-table .summary-collapse:before {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1812, ../scss/core/_common.scss */
+/* line 1811, ../scss/core/_common.scss */
 #checkout-review-table .summary-collapse:hover:before,
 #shopping-cart-totals-table .summary-collapse:hover:before,
 body.customer-account .data-table .summary-collapse:hover:before {
@@ -2763,7 +2761,7 @@ body.customer-account .data-table .summary-collapse:hover:before {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1822, ../scss/core/_common.scss */
+/* line 1821, ../scss/core/_common.scss */
 #checkout-review-table .show-details .summary-collapse:before,
 #shopping-cart-totals-table .show-details .summary-collapse:before,
 body.customer-account .data-table .show-details .summary-collapse:before {
@@ -2780,7 +2778,7 @@ body.customer-account .data-table .show-details .summary-collapse:before {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1828, ../scss/core/_common.scss */
+/* line 1827, ../scss/core/_common.scss */
 #checkout-review-table .show-details .summary-collapse:hover:before,
 #shopping-cart-totals-table .show-details .summary-collapse:hover:before,
 body.customer-account .data-table .show-details .summary-collapse:hover:before {
@@ -2798,7 +2796,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   margin-right: 5px;
 }
 
-/* line 1841, ../scss/core/_common.scss */
+/* line 1840, ../scss/core/_common.scss */
 #shopping-cart-totals-table tfoot td .summary-collapse:before, #shopping-cart-totals-table tfoot td .summary-collapse:hover:before {
   margin-bottom: 5px;
 }
@@ -2806,7 +2804,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Widgets
  * ============================================ */
-/* line 1850, ../scss/core/_common.scss */
+/* line 1849, ../scss/core/_common.scss */
 .widget .pager {
   float: none;
   width: 100%;
@@ -2815,29 +2813,29 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Magento Helpers
  * ============================================ */
-/* line 1859, ../scss/core/_common.scss */
+/* line 1858, ../scss/core/_common.scss */
 .a-center {
   text-align: center;
 }
 
-/* line 1864, ../scss/core/_common.scss */
+/* line 1863, ../scss/core/_common.scss */
 .a-right,
 .align-right {
   text-align: right;
 }
 
-/* line 1868, ../scss/core/_common.scss */
+/* line 1867, ../scss/core/_common.scss */
 .no-display {
   display: none !important;
 }
 
-/* line 1873, ../scss/core/_common.scss */
+/* line 1872, ../scss/core/_common.scss */
 .nobr,
 .nowrap {
   white-space: nowrap;
 }
 
-/* line 1877, ../scss/core/_common.scss */
+/* line 1876, ../scss/core/_common.scss */
 .width-full {
   width: 100%;
 }
@@ -2845,7 +2843,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Custom Helpers
  * ============================================ */
-/* line 1885, ../scss/core/_common.scss */
+/* line 1884, ../scss/core/_common.scss */
 .hidden {
   display: none;
 }
@@ -2853,12 +2851,12 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Print Styles
  * ============================================ */
-/* line 1893, ../scss/core/_common.scss */
+/* line 1892, ../scss/core/_common.scss */
 .page-print .print-head {
   margin: 0 0 15px;
 }
 
-/* line 1897, ../scss/core/_common.scss */
+/* line 1896, ../scss/core/_common.scss */
 .page-print .print-head .logo {
   float: none;
   max-height: 50px;
@@ -2957,7 +2955,7 @@ form .legend {
 label {
   display: inline-block;
   font-size: 13px;
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -3032,31 +3030,26 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
   border: 1px solid silver;
   background: #FFFFFF;
   font-size: 15px;
 }
-/* line 153, ../scss/core/_form.scss */
+/* line 152, ../scss/core/_form.scss */
 .input-text:focus {
   border: 1px solid #ec2b3b;
 }
 
-/* line 158, ../scss/core/_form.scss */
+/* line 157, ../scss/core/_form.scss */
 .input-text.validation-failed {
   border-color: red;
 }
 
-/* line 163, ../scss/core/_form.scss */
+/* line 162, ../scss/core/_form.scss */
 .input-text.validation-failed:focus {
   outline-color: #ff7f7f;
 }
 
-/* line 172, ../scss/core/_form.scss */
+/* line 171, ../scss/core/_form.scss */
 input[type=email],
 input[type=search],
 input[type=number],
@@ -3067,7 +3060,7 @@ input[type=text] {
   padding: 0 8px;
 }
 
-/* line 182, ../scss/core/_form.scss */
+/* line 181, ../scss/core/_form.scss */
 input[type=email],
 input[type=search],
 input[type=number],
@@ -3080,7 +3073,7 @@ input[type=text] {
 
 /* Only show on iPhones (not iPads or any other device) */
 @media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 195, ../scss/core/_form.scss */
+  /* line 194, ../scss/core/_form.scss */
   input[type=email],
   input[type=search],
   input[type=number],
@@ -3092,7 +3085,7 @@ input[type=text] {
     /* Prevent from zooming on focus */
   }
 }
-/* line 200, ../scss/core/_form.scss */
+/* line 199, ../scss/core/_form.scss */
 .ie8 .input-text {
   max-width: none;
 }
@@ -3100,7 +3093,7 @@ input[type=text] {
 /* -------------------------------------------- *
  * Inputs - Quantity
  */
-/* line 209, ../scss/core/_form.scss */
+/* line 208, ../scss/core/_form.scss */
 input[type=number].qty,
 input[type=text].qty {
   width: 3em;
@@ -3111,12 +3104,12 @@ input[type=text].qty {
 /* -------------------------------------------- *
  * Placeholder
  */
-/* line 219, ../scss/core/_form.scss */
+/* line 218, ../scss/core/_form.scss */
 ::-webkit-input-placeholder {
   color: #333333;
 }
 
-/* line 223, ../scss/core/_form.scss */
+/* line 222, ../scss/core/_form.scss */
 input:-moz-placeholder {
   color: #333333;
 }
@@ -3124,7 +3117,7 @@ input:-moz-placeholder {
 /* -------------------------------------------- *
  * Checkbox And Radio
  */
-/* line 232, ../scss/core/_form.scss */
+/* line 231, ../scss/core/_form.scss */
 .checkbox,
 .radio {
   position: relative;
@@ -3132,7 +3125,7 @@ input:-moz-placeholder {
   display: inline-block;
 }
 
-/* line 239, ../scss/core/_form.scss */
+/* line 238, ../scss/core/_form.scss */
 .checkbox + label,
 .radio + label {
   width: auto;
@@ -3146,7 +3139,7 @@ input:-moz-placeholder {
 /* -------------------------------------------- *
  * Validation
  */
-/* line 253, ../scss/core/_form.scss */
+/* line 252, ../scss/core/_form.scss */
 p.required,
 .validation-advice {
   margin: 5px 0 0;
@@ -3157,21 +3150,21 @@ p.required,
 /* ============================================ *
  * Form List
  * ============================================ */
-/* line 265, ../scss/core/_form.scss */
+/* line 264, ../scss/core/_form.scss */
 .form-list > li {
   margin-bottom: 10px;
 }
-/* line 268, ../scss/core/_form.scss */
+/* line 267, ../scss/core/_form.scss */
 .form-list select {
   margin-top: 4px;
   width: 365px;
   max-width: 100%;
 }
-/* line 274, ../scss/core/_form.scss */
+/* line 273, ../scss/core/_form.scss */
 .form-list .input-range .input-text {
   width: 74px;
 }
-/* line 280, ../scss/core/_form.scss */
+/* line 279, ../scss/core/_form.scss */
 .form-list .field,
 .form-list .wide,
 .form-list .control {
@@ -3179,7 +3172,7 @@ p.required,
 }
 
 /* Turn the label of controls (radio/checkbox) into a button style that wraps the input */
-/* line 290, ../scss/core/_form.scss */
+/* line 289, ../scss/core/_form.scss */
 .form-list .control,
 .sp-methods dt,
 #checkout-shipping-method-load .sp-methods dd,
@@ -3187,7 +3180,7 @@ p.required,
 .product-options ul.options-list {
   /* When a label is next to an input that is set to not display, we should style the label in a non-clickable state */
 }
-/* line 292, ../scss/core/_form.scss */
+/* line 291, ../scss/core/_form.scss */
 .form-list .control div.input-box,
 .sp-methods dt div.input-box,
 #checkout-shipping-method-load .sp-methods dd div.input-box,
@@ -3196,7 +3189,7 @@ p.required,
   display: inline;
   float: left;
 }
-/* line 296, ../scss/core/_form.scss */
+/* line 295, ../scss/core/_form.scss */
 .form-list .control div.input-box:after,
 .sp-methods dt div.input-box:after,
 #checkout-shipping-method-load .sp-methods dd div.input-box:after,
@@ -3204,7 +3197,7 @@ p.required,
 .product-options ul.options-list div.input-box:after {
   display: none;
 }
-/* line 302, ../scss/core/_form.scss */
+/* line 301, ../scss/core/_form.scss */
 .form-list .control input.radio,
 .form-list .control input.checkbox,
 .sp-methods dt input.radio,
@@ -3220,7 +3213,7 @@ p.required,
   margin-top: 10px;
   margin-left: 15px;
 }
-/* line 309, ../scss/core/_form.scss */
+/* line 308, ../scss/core/_form.scss */
 .form-list .control label,
 .sp-methods dt label,
 #checkout-shipping-method-load .sp-methods dd label,
@@ -3236,7 +3229,7 @@ p.required,
   float: none;
   padding: 6px 10px 6px 40px;
 }
-/* line 318, ../scss/core/_form.scss */
+/* line 317, ../scss/core/_form.scss */
 .form-list .control label:hover,
 .sp-methods dt label:hover,
 #checkout-shipping-method-load .sp-methods dd label:hover,
@@ -3244,7 +3237,7 @@ p.required,
 .product-options ul.options-list label:hover {
   background-color: #e7e7e7;
 }
-/* line 324, ../scss/core/_form.scss */
+/* line 323, ../scss/core/_form.scss */
 .form-list .control .no-display + label,
 .sp-methods dt .no-display + label,
 #checkout-shipping-method-load .sp-methods dd .no-display + label,
@@ -3253,7 +3246,7 @@ p.required,
   padding-left: 10px;
   background-color: transparent;
 }
-/* line 328, ../scss/core/_form.scss */
+/* line 327, ../scss/core/_form.scss */
 .form-list .control .no-display + label:hover,
 .sp-methods dt .no-display + label:hover,
 #checkout-shipping-method-load .sp-methods dd .no-display + label:hover,
@@ -3262,7 +3255,7 @@ p.required,
   background-color: transparent;
 }
 
-/* line 336, ../scss/core/_form.scss */
+/* line 335, ../scss/core/_form.scss */
 .product-options ul.options-list label,
 .col2-set .form-list .control label {
   min-width: inherit;
@@ -3270,27 +3263,27 @@ p.required,
   max-width: 100%;
 }
 
-/* line 343, ../scss/core/_form.scss */
+/* line 342, ../scss/core/_form.scss */
 .form-list .control.remember-me-box label {
   width: auto;
   max-width: none;
   min-width: inherit;
 }
 
-/* line 350, ../scss/core/_form.scss */
+/* line 349, ../scss/core/_form.scss */
 .form-list .control {
   margin-top: 10px;
 }
-/* line 353, ../scss/core/_form.scss */
+/* line 352, ../scss/core/_form.scss */
 .form-list .control label {
   float: none;
 }
-/* line 357, ../scss/core/_form.scss */
+/* line 356, ../scss/core/_form.scss */
 .form-list .control .radio,
 .form-list .control .checkbox {
   margin-right: 6px;
 }
-/* line 360, ../scss/core/_form.scss */
+/* line 359, ../scss/core/_form.scss */
 .form-list .control .input-box {
   clear: none;
   display: inline-block;
@@ -3298,7 +3291,7 @@ p.required,
   padding: 0;
 }
 
-/* line 369, ../scss/core/_form.scss */
+/* line 368, ../scss/core/_form.scss */
 form .form-instructions {
   font-style: italic;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -5479,91 +5472,109 @@ p.product-name a:hover {
 }
 /* line 102, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .availability {
-  font-size: 16px;
+  font-size: 13px;
+}
+/* line 104, ../scss/module/_catalog-product.scss */
+.product-view .product-shop .availability .label {
+  font-weight: bold;
 }
 /* line 106, ../scss/module/_catalog-product.scss */
+.product-view .product-shop .product-options-list {
+  content: '';
+  display: table;
+  clear: both;
+  margin-bottom: 20px;
+}
+/* line 108, ../scss/module/_catalog-product.scss */
+.product-view .product-shop .product-options-list li {
+  float: left;
+  width: 210px;
+  margin-right: 30px;
+}
+/* line 111, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box {
   margin-top: 0;
 }
-/* line 111, ../scss/module/_catalog-product.scss */
+/* line 116, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box .old-price,
 .product-view .product-shop .price-box .special-price,
 .product-view .product-shop .price-box .regular-price {
   padding-right: 0;
   line-height: 1.2;
 }
-/* line 118, ../scss/module/_catalog-product.scss */
+/* line 123, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box .regular-price .price,
 .product-view .product-shop .price-box .special-price .price,
 .product-view .product-shop .price-box .full-product-price .price {
-  color: #ec2b3b;
+  color: #333333;
+  font-weight: bold;
   font-size: 24px;
 }
-/* line 123, ../scss/module/_catalog-product.scss */
+/* line 129, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box .special-price .price-label {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 129, ../scss/module/_catalog-product.scss */
+/* line 135, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box .price-excluding-tax,
 .product-view .product-shop .price-box .price-including-tax {
   display: block;
   line-height: 1.2;
 }
-/* line 133, ../scss/module/_catalog-product.scss */
+/* line 139, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box .price-excluding-tax .label,
 .product-view .product-shop .price-box .price-including-tax .label {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 138, ../scss/module/_catalog-product.scss */
+/* line 144, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-box .price-excluding-tax .price,
 .product-view .product-shop .price-box .price-including-tax .price {
   font-size: 20px;
 }
-/* line 146, ../scss/module/_catalog-product.scss */
+/* line 152, ../scss/module/_catalog-product.scss */
 .product-view .old-price .price-label {
   display: none;
 }
-/* line 151, ../scss/module/_catalog-product.scss */
+/* line 157, ../scss/module/_catalog-product.scss */
 .product-view .block-related {
   width: 225px;
   float: right;
 }
 
-/* line 218, ../scss/module/_catalog-product.scss */
+/* line 224, ../scss/module/_catalog-product.scss */
 .product-img-box {
   width: 380px;
   float: left;
 }
-/* line 223, ../scss/module/_catalog-product.scss */
+/* line 229, ../scss/module/_catalog-product.scss */
 .product-img-box .product-name h1 {
   border: 0;
 }
-/* line 228, ../scss/module/_catalog-product.scss */
+/* line 234, ../scss/module/_catalog-product.scss */
 .product-img-box .product-image {
   margin-bottom: 10px;
 }
-/* line 232, ../scss/module/_catalog-product.scss */
+/* line 238, ../scss/module/_catalog-product.scss */
 .product-img-box .product-image img {
   max-width: 100%;
   max-height: 750px;
   margin: 0px auto;
 }
 
-/* line 251, ../scss/module/_catalog-product.scss */
+/* line 257, ../scss/module/_catalog-product.scss */
 .product-image-gallery {
   position: relative;
 }
-/* line 254, ../scss/module/_catalog-product.scss */
+/* line 260, ../scss/module/_catalog-product.scss */
 .product-image-gallery .gallery-image {
   display: none;
 }
-/* line 257, ../scss/module/_catalog-product.scss */
+/* line 263, ../scss/module/_catalog-product.scss */
 .product-image-gallery .gallery-image.visible {
   display: block;
 }
-/* line 260, ../scss/module/_catalog-product.scss */
+/* line 266, ../scss/module/_catalog-product.scss */
 .product-image-gallery .gallery-image.visible.hidden {
   visibility: hidden;
 }
@@ -5599,36 +5610,36 @@ p.product-name a:hover {
   display: block;
 }
 
-/* line 270, ../scss/module/_catalog-product.scss */
+/* line 276, ../scss/module/_catalog-product.scss */
 .product-image-thumbs li {
   display: inline-block;
 }
-/* line 273, ../scss/module/_catalog-product.scss */
+/* line 279, ../scss/module/_catalog-product.scss */
 .product-image-thumbs li:first-child {
   margin-left: -1px;
 }
-/* line 276, ../scss/module/_catalog-product.scss */
+/* line 282, ../scss/module/_catalog-product.scss */
 .product-image-thumbs a {
   display: inline-block;
   border: 1px solid transparent;
 }
 
-/* line 283, ../scss/module/_catalog-product.scss */
+/* line 289, ../scss/module/_catalog-product.scss */
 .no-touch .product-image-thumbs a:hover {
   border-color: #bbbdc8;
 }
 
-/* line 288, ../scss/module/_catalog-product.scss */
+/* line 294, ../scss/module/_catalog-product.scss */
 .product-view .product-shop {
   padding-left: 30px;
 }
 
-/* line 292, ../scss/module/_catalog-product.scss */
+/* line 298, ../scss/module/_catalog-product.scss */
 .product-view .block-related {
   padding-left: 15px;
 }
 
-/* line 300, ../scss/module/_catalog-product.scss */
+/* line 306, ../scss/module/_catalog-product.scss */
 .product-view .product-shop,
 .product-img-box,
 .product-collateral,
@@ -5637,78 +5648,93 @@ p.product-name a:hover {
   margin-bottom: 10px;
 }
 
-/* line 304, ../scss/module/_catalog-product.scss */
+/* line 310, ../scss/module/_catalog-product.scss */
 .product-view {
   /* Set a min-height so that the floated elements break appropriately */
 }
-/* line 307, ../scss/module/_catalog-product.scss */
+/* line 313, ../scss/module/_catalog-product.scss */
 .product-view .add-to-box:after,
 .product-view .add-to-cart:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 311, ../scss/module/_catalog-product.scss */
+/* line 317, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart {
   padding-bottom: 3px;
   margin-bottom: 10px;
   border-bottom: 1px solid #d6d6d6;
 }
-/* line 320, ../scss/module/_catalog-product.scss */
+/* line 326, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart .qty-wrapper,
 .product-view .product-options-bottom .price-box,
 .product-view .add-to-cart-buttons {
   min-height: 40px;
 }
-/* line 327, ../scss/module/_catalog-product.scss */
+/* line 333, ../scss/module/_catalog-product.scss */
 .product-view .product-options-bottom .price-box,
 .product-view .add-to-cart .qty-wrapper,
 .product-view .add-to-cart-buttons .button,
 .product-view .add-to-cart-buttons .paypal-logo {
   margin-bottom: 10px;
 }
-/* line 332, ../scss/module/_catalog-product.scss */
+/* line 338, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart .qty-wrapper,
 .product-view .add-to-cart .qty-wrapper label {
-  margin-right: 7px;
-  float: left;
+  display: block;
 }
-/* line 337, ../scss/module/_catalog-product.scss */
+/* line 342, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart .qty-wrapper label {
-  line-height: 40px;
-}
-/* line 341, ../scss/module/_catalog-product.scss */
-.product-view .add-to-cart .qty-wrapper .qty {
-  float: left;
-  height: 40px;
+  line-height: 34px;
 }
 /* line 346, ../scss/module/_catalog-product.scss */
+.product-view .add-to-cart .qty-wrapper .qty {
+  height: 34px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -1px;
+  position: relative;
+  z-index: 1;
+}
+/* line 350, ../scss/module/_catalog-product.scss */
+.product-view .qty-minus, .product-view .qty-plus {
+  display: inline-block;
+  vertical-align: top;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  width: 30px;
+  border: 1px solid silver;
+  color: #333333;
+  cursor: pointer;
+}
+/* line 352, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons {
   float: left;
   margin-right: 10px;
 }
-/* line 350, ../scss/module/_catalog-product.scss */
+/* line 356, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons .paypal-logo {
   clear: left;
   text-align: center;
 }
-/* line 354, ../scss/module/_catalog-product.scss */
+/* line 360, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons .paypal-logo .paypal-button {
   margin: 0 auto;
   display: block;
   width: 145px;
 }
-/* line 360, ../scss/module/_catalog-product.scss */
+/* line 366, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons .paypal-logo .bml_button {
   display: block;
   width: 150px;
   margin: 0 auto;
 }
-/* line 365, ../scss/module/_catalog-product.scss */
+/* line 371, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons .paypal-logo .bml_button a {
   text-align: center;
 }
-/* line 370, ../scss/module/_catalog-product.scss */
+/* line 376, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons .paypal-logo .paypal-or {
   display: block;
   margin-bottom: 10px;
@@ -5717,7 +5743,7 @@ p.product-name a:hover {
   line-height: 1;
   text-align: center;
 }
-/* line 381, ../scss/module/_catalog-product.scss */
+/* line 387, ../scss/module/_catalog-product.scss */
 .product-view .add-to-cart-buttons .button {
   height: 34px;
   line-height: 34px;
@@ -5729,29 +5755,29 @@ p.product-name a:hover {
 }
 
 /* This is the "or" that separates the "Add to Cart" and "Add to X" links */
-/* line 413, ../scss/module/_catalog-product.scss */
+/* line 419, ../scss/module/_catalog-product.scss */
 .add-to-box .or {
   display: none;
 }
 
-/* line 417, ../scss/module/_catalog-product.scss */
+/* line 423, ../scss/module/_catalog-product.scss */
 .product-view .add-to-links {
   clear: both;
   margin-top: 0px;
   margin-right: 15px;
   float: left;
 }
-/* line 423, ../scss/module/_catalog-product.scss */
+/* line 429, ../scss/module/_catalog-product.scss */
 .product-view .add-to-links:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 427, ../scss/module/_catalog-product.scss */
+/* line 433, ../scss/module/_catalog-product.scss */
 .product-view .add-to-links li {
   float: left;
 }
-/* line 431, ../scss/module/_catalog-product.scss */
+/* line 437, ../scss/module/_catalog-product.scss */
 .product-view .add-to-links a {
   padding: 0px 16px;
   height: 34px;
@@ -5763,69 +5789,69 @@ p.product-name a:hover {
   font-weight: bold;
   font-size: 11px;
 }
-/* line 441, ../scss/module/_catalog-product.scss */
+/* line 447, ../scss/module/_catalog-product.scss */
 .product-view .add-to-links a:hover {
   text-decoration: none;
 }
 
-/* line 447, ../scss/module/_catalog-product.scss */
+/* line 453, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links {
   float: left;
 }
-/* line 450, ../scss/module/_catalog-product.scss */
+/* line 456, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 454, ../scss/module/_catalog-product.scss */
+/* line 460, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links li {
   float: left;
   padding: 0px 7px 7px;
 }
-/* line 459, ../scss/module/_catalog-product.scss */
+/* line 465, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a {
   text-indent: -9999px;
   display: block;
   width: 26px;
   height: 26px;
 }
-/* line 466, ../scss/module/_catalog-product.scss */
+/* line 472, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a:hover {
   opacity: 0.8;
 }
-/* line 469, ../scss/module/_catalog-product.scss */
+/* line 475, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a.link-wishlist {
   background-position: 0px -225px;
 }
-/* line 472, ../scss/module/_catalog-product.scss */
+/* line 478, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a.link-compare {
   background-position: 0px -250px;
 }
-/* line 475, ../scss/module/_catalog-product.scss */
+/* line 481, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a.link-email-friend {
   background-position: 0px -322px;
 }
-/* line 478, ../scss/module/_catalog-product.scss */
+/* line 484, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a.link-facebook {
   background-position: 0px -425px;
 }
-/* line 481, ../scss/module/_catalog-product.scss */
+/* line 487, ../scss/module/_catalog-product.scss */
 .product-view .sharing-links a.link-twitter {
   background-position: 0px -372px;
 }
 
-/* line 496, ../scss/module/_catalog-product.scss */
+/* line 502, ../scss/module/_catalog-product.scss */
 .product-collateral {
   clear: both;
 }
 
-/* line 502, ../scss/module/_catalog-product.scss */
+/* line 508, ../scss/module/_catalog-product.scss */
 .collateral-tabs dd h2 {
   display: none;
 }
 
-/* line 508, ../scss/module/_catalog-product.scss */
+/* line 514, ../scss/module/_catalog-product.scss */
 .box-collateral {
   clear: both;
 }
@@ -5907,29 +5933,29 @@ p.product-name a:hover {
   display: block;
 }
 
-/* line 543, ../scss/module/_catalog-product.scss */
+/* line 549, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .product-name {
   display: block;
 }
 
-/* line 546, ../scss/module/_catalog-product.scss */
+/* line 552, ../scss/module/_catalog-product.scss */
 .product-img-box .product-name {
   display: none;
 }
 
-/* line 563, ../scss/module/_catalog-product.scss */
+/* line 569, ../scss/module/_catalog-product.scss */
 .product-view .ratings .rating-links {
   clear: left;
   float: left;
   margin-top: 0;
 }
 
-/* line 570, ../scss/module/_catalog-product.scss */
+/* line 576, ../scss/module/_catalog-product.scss */
 #product-attribute-specs-table {
   max-width: 50em;
   border: 1px solid silver;
 }
-/* line 574, ../scss/module/_catalog-product.scss */
+/* line 580, ../scss/module/_catalog-product.scss */
 #product-attribute-specs-table th {
   border-right: 1px solid silver;
   border-bottom: 1px solid silver;
@@ -5938,32 +5964,32 @@ p.product-name a:hover {
 /* -------------------------------------------- *
  * Catalog - Grouped Product List
  */
-/* line 584, ../scss/module/_catalog-product.scss */
+/* line 590, ../scss/module/_catalog-product.scss */
 .grouped-items-table-wrapper {
   border: solid 1px silver;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
 }
-/* line 590, ../scss/module/_catalog-product.scss */
+/* line 596, ../scss/module/_catalog-product.scss */
 .grouped-items-table-wrapper tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* line 599, ../scss/module/_catalog-product.scss */
+/* line 605, ../scss/module/_catalog-product.scss */
 .grouped-items-table .name-wrapper {
   color: #3399cc;
   font-family: "PT Serif", serif;
 }
-/* line 604, ../scss/module/_catalog-product.scss */
+/* line 610, ../scss/module/_catalog-product.scss */
 .grouped-items-table .qty-wrapper {
   padding-top: 7px;
 }
-/* line 608, ../scss/module/_catalog-product.scss */
+/* line 614, ../scss/module/_catalog-product.scss */
 .grouped-items-table .qty-label {
   margin-left: 7px;
 }
-/* line 612, ../scss/module/_catalog-product.scss */
+/* line 618, ../scss/module/_catalog-product.scss */
 .grouped-items-table td {
   padding: 4px;
 }
@@ -5971,7 +5997,7 @@ p.product-name a:hover {
 /* -------------------------------------------- *
  * Catalog - Product Options
  */
-/* line 621, ../scss/module/_catalog-product.scss */
+/* line 627, ../scss/module/_catalog-product.scss */
 .product-options {
   width: 100%;
   margin: 10px 0 0;
@@ -5980,71 +6006,71 @@ p.product-name a:hover {
   position: relative;
 }
 
-/* line 629, ../scss/module/_catalog-product.scss */
+/* line 635, ../scss/module/_catalog-product.scss */
 .product-options dt {
   margin: 10px 0 3px;
   font-weight: normal;
   width: 210px;
 }
 
-/* line 635, ../scss/module/_catalog-product.scss */
+/* line 641, ../scss/module/_catalog-product.scss */
 .product-options dt:first-child {
   margin-top: 0;
 }
 
-/* line 639, ../scss/module/_catalog-product.scss */
+/* line 645, ../scss/module/_catalog-product.scss */
 .product-options dd .qty-holder {
   display: block;
   padding: 10px 0 0 0;
 }
 
-/* line 644, ../scss/module/_catalog-product.scss */
+/* line 650, ../scss/module/_catalog-product.scss */
 .product-options dd .qty-holder .qty {
   width: 3em;
 }
 
-/* line 648, ../scss/module/_catalog-product.scss */
+/* line 654, ../scss/module/_catalog-product.scss */
 .product-options dd .qty-holder label {
   vertical-align: middle;
 }
 
-/* line 652, ../scss/module/_catalog-product.scss */
+/* line 658, ../scss/module/_catalog-product.scss */
 .product-options dd .qty-disabled {
   background: none;
   border: 0;
   padding: 0 2px;
 }
 
-/* line 658, ../scss/module/_catalog-product.scss */
+/* line 664, ../scss/module/_catalog-product.scss */
 .product-options dd {
   padding: 0 0 10px 0;
   margin: 0 0 10px;
   width: 210px;
 }
 
-/* line 664, ../scss/module/_catalog-product.scss */
+/* line 670, ../scss/module/_catalog-product.scss */
 .product-options dl.last dd.last {
   border-bottom: 0;
   padding-bottom: 5px;
   margin-bottom: 0;
 }
 
-/* line 670, ../scss/module/_catalog-product.scss */
+/* line 676, ../scss/module/_catalog-product.scss */
 .product-options dd .input-text {
   width: 98%;
 }
 
-/* line 674, ../scss/module/_catalog-product.scss */
+/* line 680, ../scss/module/_catalog-product.scss */
 .product-options dd .input-box {
   padding-top: 0;
 }
 
-/* line 678, ../scss/module/_catalog-product.scss */
+/* line 684, ../scss/module/_catalog-product.scss */
 .product-options dd input.datetime-picker {
   width: 150px;
 }
 
-/* line 682, ../scss/module/_catalog-product.scss */
+/* line 688, ../scss/module/_catalog-product.scss */
 .product-options dd .time-picker {
   display: -moz-inline-stack;
   display: inline-block;
@@ -6056,72 +6082,72 @@ p.product-name a:hover {
   vertical-align: middle;
 }
 
-/* line 688, ../scss/module/_catalog-product.scss */
+/* line 694, ../scss/module/_catalog-product.scss */
 .product-options dd textarea {
   width: 98%;
   height: 8em;
 }
 
-/* line 693, ../scss/module/_catalog-product.scss */
+/* line 699, ../scss/module/_catalog-product.scss */
 .product-options dd select {
   width: 330px;
   max-width: 100%;
 }
 
-/* line 698, ../scss/module/_catalog-product.scss */
+/* line 704, ../scss/module/_catalog-product.scss */
 .product-options ul.options-list {
   margin-right: 5px;
 }
 
-/* line 702, ../scss/module/_catalog-product.scss */
+/* line 708, ../scss/module/_catalog-product.scss */
 .product-options ul.options-list li {
   line-height: 1.5;
   margin-bottom: 7px;
 }
 
-/* line 707, ../scss/module/_catalog-product.scss */
+/* line 713, ../scss/module/_catalog-product.scss */
 .product-options ul.options-list li:last-child {
   margin-bottom: 0;
 }
 
-/* line 712, ../scss/module/_catalog-product.scss */
+/* line 718, ../scss/module/_catalog-product.scss */
 .product-options ul.options-list .radio,
 .product-options ul.options-list .checkbox {
   float: left;
   margin-top: 5px;
 }
 
-/* line 717, ../scss/module/_catalog-product.scss */
+/* line 723, ../scss/module/_catalog-product.scss */
 .product-options ul.options-list .label {
   display: block;
 }
 
-/* line 721, ../scss/module/_catalog-product.scss */
+/* line 727, ../scss/module/_catalog-product.scss */
 .product-options ul.options-list label {
   font-weight: normal;
 }
 
-/* line 725, ../scss/module/_catalog-product.scss */
+/* line 731, ../scss/module/_catalog-product.scss */
 .product-options p.note {
   margin: 0;
   font-size: 11px;
 }
 
-/* line 730, ../scss/module/_catalog-product.scss */
+/* line 736, ../scss/module/_catalog-product.scss */
 .product-options-bottom {
   padding: 15px 0px;
   border-top: 0;
   margin-bottom: 10px;
 }
 
-/* line 736, ../scss/module/_catalog-product.scss */
+/* line 742, ../scss/module/_catalog-product.scss */
 .product-options-bottom:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 741, ../scss/module/_catalog-product.scss */
+/* line 747, ../scss/module/_catalog-product.scss */
 .product-options-bottom .product-pricing,
 .product-options-bottom .tier-prices {
   float: right;
@@ -6132,13 +6158,13 @@ p.product-name a:hover {
   color: #333333;
 }
 
-/* line 759, ../scss/module/_catalog-product.scss */
+/* line 765, ../scss/module/_catalog-product.scss */
 .product-options-bottom .tier-prices li {
   background: 0;
   padding: 2px 0;
 }
 
-/* line 765, ../scss/module/_catalog-product.scss */
+/* line 771, ../scss/module/_catalog-product.scss */
 .product-options-bottom .tier-prices .price,
 .product-options-bottom .tier-prices .benefit {
   color: #333333;
@@ -6146,7 +6172,7 @@ p.product-name a:hover {
 
 /* "display: none" should be removed if products on site have a long list of product options and those product options */
 /*  affect the price so that the customer can see the updated price close to the "Add to Cart" button */
-/* line 771, ../scss/module/_catalog-product.scss */
+/* line 777, ../scss/module/_catalog-product.scss */
 .product-options-bottom .price-box {
   display: none;
   float: right;
@@ -6154,7 +6180,7 @@ p.product-name a:hover {
   padding: 0;
 }
 
-/* line 788, ../scss/module/_catalog-product.scss */
+/* line 794, ../scss/module/_catalog-product.scss */
 .product-options-bottom .price-tax {
   float: left;
 }
@@ -6163,15 +6189,15 @@ p.product-name a:hover {
  * Related Products
  */
 /* Block: Related */
-/* line 800, ../scss/module/_catalog-product.scss */
+/* line 806, ../scss/module/_catalog-product.scss */
 .block-related li {
   margin-bottom: 7px;
 }
-/* line 804, ../scss/module/_catalog-product.scss */
+/* line 810, ../scss/module/_catalog-product.scss */
 .block-related .block-title {
   border-bottom: none;
 }
-/* line 807, ../scss/module/_catalog-product.scss */
+/* line 813, ../scss/module/_catalog-product.scss */
 .block-related .block-title h2 {
   margin: 0;
   margin-bottom: 0.5em;
@@ -6186,52 +6212,52 @@ p.product-name a:hover {
   border-bottom: 1px solid #e5e6ea;
   margin-bottom: 0;
 }
-/* line 813, ../scss/module/_catalog-product.scss */
+/* line 819, ../scss/module/_catalog-product.scss */
 .block-related .block-subtitle {
   margin-bottom: 7px;
 }
-/* line 817, ../scss/module/_catalog-product.scss */
+/* line 823, ../scss/module/_catalog-product.scss */
 .block-related .product {
   margin-left: 20px;
   position: relative;
 }
-/* line 821, ../scss/module/_catalog-product.scss */
+/* line 827, ../scss/module/_catalog-product.scss */
 .block-related .checkbox {
   float: left;
   margin-top: 36px;
 }
-/* line 826, ../scss/module/_catalog-product.scss */
+/* line 832, ../scss/module/_catalog-product.scss */
 .block-related .product-details {
   margin-left: 90px;
 }
-/* line 830, ../scss/module/_catalog-product.scss */
+/* line 836, ../scss/module/_catalog-product.scss */
 .block-related .product-name {
   margin-bottom: 3px;
 }
-/* line 834, ../scss/module/_catalog-product.scss */
+/* line 840, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box {
   margin: 2px 0 3px;
 }
-/* line 839, ../scss/module/_catalog-product.scss */
+/* line 845, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box a,
 .block-related .product-details .price-box p,
 .block-related .product-details .price-box span {
   float: left;
   margin-left: 3px;
 }
-/* line 843, ../scss/module/_catalog-product.scss */
+/* line 849, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box a:first-child,
 .block-related .product-details .price-box p:first-child,
 .block-related .product-details .price-box span:first-child {
   margin-left: 0;
 }
-/* line 847, ../scss/module/_catalog-product.scss */
+/* line 853, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 851, ../scss/module/_catalog-product.scss */
+/* line 857, ../scss/module/_catalog-product.scss */
 .block-related .link-wishlist {
   display: none;
 }
@@ -6239,11 +6265,11 @@ p.product-name a:hover {
 /* -------------------------------------------- *
  * Upsell Products
  */
-/* line 860, ../scss/module/_catalog-product.scss */
+/* line 866, ../scss/module/_catalog-product.scss */
 .box-up-sell {
   margin-top: 20px;
 }
-/* line 863, ../scss/module/_catalog-product.scss */
+/* line 869, ../scss/module/_catalog-product.scss */
 .box-up-sell .ratings {
   display: none;
 }
@@ -10158,6 +10184,48 @@ div.paypal-logo span > img {
 /* line 20, ../scss/module/_new-carousel.scss */
 .carousel-wrapper .carousel-nav__prev {
   right: 46px;
+}
+
+/* line 1, ../scss/module/_new-select.scss */
+.new-select {
+  position: relative;
+}
+/* line 3, ../scss/module/_new-select.scss */
+.new-select .new-select-label {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid #ececec;
+  padding-left: 17px;
+  padding-right: 40px;
+  position: relative;
+  vertical-align: top;
+}
+/* line 5, ../scss/module/_new-select.scss */
+.new-select .new-select-label:after {
+  position: absolute;
+  content: "\f107";
+  width: 39px;
+  height: 20px;
+  border-left: 1px solid #ececec;
+  text-align: center;
+  color: #929292;
+  line-height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  font-family: FontAwesome;
+  right: 0;
+}
+/* line 7, ../scss/module/_new-select.scss */
+.new-select select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 /**

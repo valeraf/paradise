@@ -27,4 +27,37 @@ jQuery(function($){
   $('.carousel-nav__next').jcarouselControl({
     target: '+=1'
   });
+
+  $('select').parent('.input-box').addClass('new-select').append('<span class="new-select-label">');
+  $('select').each(function(){
+    if($(this).is(':disabled')){
+      $(this).parent('.new-select').addClass('new-select-disabled');
+    }
+  });
+  setTimeout(function(){
+    $('.new-select').each(function(){
+      $(this).find('.new-select-label').text($(this).find('select').find('option:selected').text());
+    });    
+  },300);
+  $('.new-select').on('change', 'select', function(){
+    $('.new-select select').each(function(){
+      var text = $(this).find('option:selected').text();
+      $(this).next('.new-select-label').html(text)
+    });
+    $('select').each(function(){
+      if($(this).is(':disabled')){
+        $(this).parent('.new-select').addClass('new-select-disabled');
+      }else{
+        $(this).parent('.new-select').removeClass('new-select-disabled');
+      }
+    });
+  });
+  $('.qty-plus').click(function(){
+    var val = parseInt($('input.qty').val());
+    $('input.qty').val(val+1);
+  });
+  $('.qty-minus').click(function(){
+    var val = parseInt($('input.qty').val());
+    $('input.qty').val(val - 1);
+  });
 });
