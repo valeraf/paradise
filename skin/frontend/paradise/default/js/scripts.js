@@ -28,7 +28,7 @@ jQuery(function($){
     target: '+=1'
   });
 
-  $('select').parent('.input-box').addClass('new-select').append('<span class="new-select-label">');
+  $('select').parent('.input-box').addClass('new-select').prepend('<span class="new-select-label">');
   $('select').each(function(){
     if($(this).is(':disabled')){
       $(this).parent('.new-select').addClass('new-select-disabled');
@@ -61,3 +61,15 @@ jQuery(function($){
     $('input.qty').val(val - 1);
   });
 });
+
+ProductMediaManager.wireThumbnails = function() {
+  //trigger image change event on thumbnail click
+  $j('.product-image-thumbs .thumb-link').click(function(e) {
+    e.preventDefault();
+    $j('.product-image-thumbs .thumb-link').removeClass('current');
+    var jlink = $j(this);
+    var target = $j('#image-' + jlink.data('image-index'));
+    jlink.addClass('current');
+    ProductMediaManager.swapImage(target);
+  });
+}

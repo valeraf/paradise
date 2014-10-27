@@ -615,7 +615,7 @@ body .promos > li {
 
 /* line 55, ../scss/content/_category.scss */
 .catblocks li:hover {
-  border-color: #3399cc;
+  border-color: #f23940;
 }
 
 @media only screen and (max-width: 770px) {

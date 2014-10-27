@@ -31,7 +31,7 @@
         <?php if(!$_product->isGrouped()): ?>
         <div class="qty-wrapper">
             <label for="qty"><?php echo $this->__('Qty:') ?></label>
-            <span class="qty-minus">&mdash;</span><input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" value="<?php echo max($this->getProductDefaultQty() * 1, 1) ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" /><span class="qty-plus">+</span>
+            <span class="qty-minus">&ndash;</span><input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" value="<?php echo max($this->getProductDefaultQty() * 1, 1) ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" /><span class="qty-plus">+</span>
         </div>
         <?php endif; ?>
         <div class="add-to-cart-buttons">

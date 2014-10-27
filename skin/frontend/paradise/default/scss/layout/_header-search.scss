@@ -105,6 +105,7 @@
     background: none;
     color: $c-text;
     font-size: $f-size-xxl;
+    overflow: hidden;
 
     &:before {content:'';position: absolute;left: 0;height: 20px;width: 1px;background-color: $c-input-border;top: 50%;margin-top: -9px;}
     span {

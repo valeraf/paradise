@@ -27,13 +27,13 @@
         display: block;
         width: 100%;
         position: relative;
-        border: 1px solid $c-module-border;
-        background-color: $c-module-background;
+        border-bottom: 1px solid $c-module-border;
 
         li {
             float: left;
-            border-right: 1px solid transparent;
+            border-right: 1px solid $c-module-border;
             border-left: 1px solid transparent;
+            border-top: 1px solid $c-module-border;
 
             > span {
                 @include not-selectable;
@@ -42,30 +42,29 @@
                 height: 40px;
                 line-height: 40px;
                 cursor: pointer;
+                font-weight: bold;
                 text-transform: uppercase;
-                font-size: $f-size-xs;
+                font-size: $f-size-xxs;
                 position: relative;
-                bottom: -1px;
+                color: $c-text;
             }
         }
 
         li.current {
-            border-right: 1px solid $c-module-border;
-            border-left: 1px solid $c-module-border;
-
-            > span {
-                background-color: #FFFFFF;
-                z-index: 5;
-            }
+            border-right: 1px solid $c-dark;
+            border-left: 1px solid $c-dark;
+            border-top: 1px solid $c-dark;
         }
 
         li.current span,
         li:hover span {
-            color: $c-action;
+            color: #fff;
+            background-color: $c-dark;
+            z-index: 5;
         }
 
         li:first-child {
-            border-left: none;
+            border-left: 1px solid $c-module-border;
         }
 
         &:after {
@@ -95,16 +94,15 @@
 }
 
 @mixin accordionDtBase($arrow-direction: 'down', $border-color: $c-module-border) {
-    @include h4;
     @include not-selectable;
-    font-weight: normal;
-    margin-bottom: 0px;
-    padding: 7px 10px 7px 24px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: $border-color;
+    margin-bottom: 5px;
+    padding: 0;
     position: relative;
-    background-color: $c-module-background;
+    text-transform: uppercase;
+    font-family: $f-stack-sans;
+    color: $c-text;
+    font-size: $f-size-xs;
+    font-weight: bold;
 
     &:after {
         @include triangle(#{$arrow-direction}, 4px, $c-action);
@@ -126,14 +124,21 @@
         }
 
         > dd {
-            padding: $box-spacing;
-            margin: 0;
-            border-width: 0 1px;
-            border-style: solid;
-            border-color: $c-module-border;
-        }
-        > dd:last-child {
-            border-width: 0 1px 1px 1px;
+            font-family: $f-stack-sans;
+            font-size: $f-size-s;
+            color: $c-text;
+            margin: 0 0 15px;
+            a {
+                color: $c-text;
+                padding: 0;
+                padding: 0 0 0 18px;
+                height: 26px;
+                line-height: 26px;
+                &:hover {
+                    background: lighten($c-tabs-background, 20%);
+                    color: $c-black;
+                }
+            }
         }
     }
 }

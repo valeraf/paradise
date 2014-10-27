@@ -28,26 +28,43 @@
  * ============================================ */
 
 .cart-table {
-    float: left;
-    width: 60%;
+    .product-name {
+        line-height: 34px;font-size: $f-size-xl;margin-bottom: 5px;
+    }    
+    .product-cart-remove {
+        line-height: 34px;
+    }
 }
 
 .cart-forms,
-.cart-totals-wrapper,
 .crosssell {
+    float: left;
+    width: 380px;
+    margin-right: 40px;
+}
+.cart-totals-wrapper {
     float: right;
-    clear: right;
-    width: 40%;
-    padding-left: $box-spacing-large;
+    width: 300px;
 }
 
-.cart-totals,
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
-    padding: $box-spacing;
-    background-color: $c-module-background;
-    border: 1px solid $c-module-border;
+    padding: 25px $box-spacing;
+    border: 1px solid $c-module-border;    
+}
+
+.cart-forms .discount,
+.cart-forms .giftcard,
+.cart-forms .shipping {
+    h2 {
+        text-align: center;
+        font-size: 22px;
+        border: none;
+        margin: 0 0 10px;
+        color: $c-text;
+        padding-bottom: 0;
+    }
 }
 
 .cart-table,
@@ -55,7 +72,7 @@
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
-    margin-bottom: $box-spacing-large;
+    margin-bottom: $trim;
 }
 
 @mixin oneColumnCartItems {
@@ -121,7 +138,7 @@
  * ============================================ */
 
 .cart .page-title {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     border-bottom: 1px solid $c-module-border-light;
 
     &:after {
@@ -130,7 +147,6 @@
     h1 {
         float: left;
         border-bottom: none;
-        margin-bottom: 6px;
         margin-right: 10px;
     }
 }
@@ -145,7 +161,7 @@
             @include clearfix;
         }
         vertical-align: top;
-        margin: 0 0 5px 5px;
+        margin: 0 0 0 5px;
 
         img {
             display: inline;
@@ -242,8 +258,12 @@
     thead th,
     tbody td {
         background-color: transparent;
-        padding: 10px 5px;
+        padding: 30px 5px;
         font-family: $f-stack-special;
+        width: 5%;
+    }
+    thead {
+        th {padding: 0 5px;height: 54px;line-height: 54px;font-family: $f-stack-sans;font-weight: bold;font-size: $f-size-xs;}
     }
 
     .product-cart-info,
@@ -263,6 +283,9 @@
         tr > td:after {
             @include clearfix;
         }
+        td {
+            padding: 30px 0;
+        }
     }
 
     span.or {
@@ -277,14 +300,17 @@
     .product-cart-actions .button {
         display: none;
     }
+    .product-cart-info {
+        width: 35%;
+    }
 
     .product-cart-image {
         padding-left: 0;
         padding-right: 0;
+        width: 1%;
 
-        .product-image img {
-            max-width: 100%;
-            width: 100%;
+        .product-image {
+            border: none;
         }
 
         a.cart-edit {
@@ -296,7 +322,7 @@
         font-family: $f-stack-serif;
         font-style: italic;
         font-size: $f-size-xs;
-        margin: 5px 0 12px;
+        margin: 0 0 12px;
 
         .label {
             font-weight: 600;
@@ -305,11 +331,25 @@
 
     .btn-empty {
         float: left;
+        @extend .button-white;
     }
 
     .product-cart-total,
     .product-cart-price {
         text-align: center;
+        .cart-price {
+            .price {
+                line-height: 34px;
+            }
+        }
+    }
+
+    .product-cart-price {
+        .cart-price {
+            .price {
+                color: $c-grey;
+            }
+        }
     }
 
     .cart-tax-total {
@@ -339,27 +379,24 @@
         min-width: 65px;
         font-size: $f-size-s;
 
-        > a {
-            display: block;
-        }
-
         &:last-child {
             margin-bottom: 0;
         }
     }
 
     .product-cart-actions {
-        min-width: 60px;
+        min-width: 150px;
         text-align: center;
 
         .qty {
-            height: 30px;
-            border-color: $c-input-border;
+            height: 34px;
             border-radius: 0;
-            margin-bottom: 10px;
             text-align: center;
-            width: 3em;
+            width: 40px;
+            margin: 0 -1px 10px;
         }
+        .qty-minus, .qty-plus {display: inline-block;vertical-align: top;height: 34px;line-height: 32px;text-align: center;width: 30px;border: 1px solid $c-input-border;color: $c-text;cursor: pointer;font-size: $f-size-xxl;}
+        .qty-minus {line-height: 31px;}
 
         .button {
             margin-bottom: 5px;
@@ -368,6 +405,9 @@
 
     .item-options {
         padding-left: 15px;
+    }
+    .btn-remove.btn-remove2 {
+        border: none;
     }
 }
 
@@ -591,12 +631,6 @@
 
 .shipping {
 
-    h2 {
-        font-size: $f-size-xs;
-        font-weight: bold;
-        margin: 0 0 5px;
-    }
-
     select {
         max-width: 100%;
         height: 30px;
@@ -615,7 +649,8 @@
     .buttons-set {
         border: none;
         margin: 0;
-        padding: 0;
+        padding: 10px 0 0;
+        text-align: center;
     }
 
     .form-list {
@@ -623,25 +658,8 @@
             @include clearfix;
         }
         li {
-            float: left;
-            margin: 5px 2% 10px 0;
-        }
-
-        .shipping-country {
-            width: 37%;
-        }
-
-        .shipping-region {
-            width: 41%;
-        }
-
-        .shipping-postcode {
-            margin-right: 0;
-            width: 18%;
-
-            input {
-                margin-top: 4px;
-            }
+            margin: 0 auto 15px;
+            width: 244px;
         }
 
         .input-box {
@@ -649,15 +667,17 @@
         }
 
         input {
-            height: 30px;
+            height: 35px;
             margin-top: 4px;
         }
 
         label {
-            font-family: $f-stack-special;
             font-size: $f-size-s;
             font-weight: 400;
-            text-transform: uppercase;
+            display: block;
+            color: $c-grey;
+            text-align: left;
+            margin-bottom: 5px;
         }
     }
 
@@ -745,20 +765,23 @@
         tbody tr:last-child th {
             padding-bottom: 10px;
         }
+        tbody {
+            td {
+                font-family: $f-stack-sans;
+                font-weight: bold;
+                span.price {
+                    font-size: $f-size;
+                    font-weight: 300;
+                }
+            }
+        }
 
         tfoot {
-            border-top: 1px solid #E6E6E6;
-            border-bottom: 1px solid #E6E6E6;
+            text-transform: none;
             td {
-                font-size: 24px;
+                font-size: 22px;
                 padding: 2px 5px;
                 vertical-align: top;
-            }
-
-            strong span,
-            span.price {
-                font-family: $f-stack-sans;
-
             }
 
             strong {
@@ -795,23 +818,18 @@
 .cart .giftcard {
     width: 100%;
 
-    h2 {
-        display: none;
-    }
-
     label {
-        font-family: $f-stack-special;
-        font-size: $f-size-xs;
+        font-size: $f-size-s;
+        color: $c-text;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         text-transform: uppercase;
-        min-width: 105px;
-        display: inline-block;
-        margin-right: 10px;
+        display: block;
+        margin-bottom: 15px;
     }
 
     .field-wrapper {
-        display: inline-block;
+        width: 235px;margin: 0 auto;
     }
 
     .validation-advice {
@@ -819,19 +837,13 @@
     }
 
     .button-wrapper {
-        display: inline-block;
-        vertical-align: bottom;
-
-        > button {
-            float: left;
-        }
+        padding-top: 20px;
+        text-align: center;
     }
 
     .input-text {
-        border-radius: 0;
-        height: 30px;
-        margin: 4px 10px 0 0;
-        width: 190px;
+        height: 35px;
+        width: 100%;
     }
 }
 

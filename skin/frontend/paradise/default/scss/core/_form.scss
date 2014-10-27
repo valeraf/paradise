@@ -137,6 +137,7 @@ textarea {
     max-width: 100%;
     width: 450px;
     padding: 5px;
+    border: 1px solid $c-input-border;
 }
 
 /* -------------------------------------------- *
@@ -265,7 +266,6 @@ p.required,
         margin-bottom: $box-spacing;
     }
     select {
-        margin-top: 4px;
         width: (230px + 135px);
         max-width: 100%;
     }

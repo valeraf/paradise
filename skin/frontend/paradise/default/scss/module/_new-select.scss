@@ -1,8 +1,11 @@
 .new-select {
   position: relative;
   .new-select-label {
-    display: inline-block;width: 100%;height: 40px;line-height: 38px;border: 1px solid $c-divider-border;padding-left: 17px;padding-right: 40px;position: relative;vertical-align: top;
-    &:after {position: absolute;content: "\f107";width: 39px;height: 20px;border-left: 1px solid $c-divider-border;text-align: center;color: #929292;line-height: 20px;top: 50%;margin-top: -10px;font-family: FontAwesome;right: 0}
+    display: inline-block;width: 100%;height: 40px;line-height: 38px;border: 1px solid $c-input-border;padding-left: 17px;padding-right: 40px;position: relative;vertical-align: top;white-space: nowrap;overflow: hidden;-o-text-overflow: ellipsis;text-overflow: ellipsis;
+    &:after {position: absolute;content: "\f107";width: 39px;height: 20px;border-left: 1px solid $c-input-border;text-align: center;color: #929292;line-height: 20px;top: 50%;margin-top: -10px;font-family: FontAwesome;right: 0}
   }
   select {position: absolute;top: 0;left: 0;height: 100%;opacity: 0;width: 100%;z-index: 10}
+}
+.new-select-disabled {
+  cursor: not-allowed;
 }

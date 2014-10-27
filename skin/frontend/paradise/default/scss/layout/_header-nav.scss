@@ -211,6 +211,10 @@ $nav-primary-height: 42px;
             border-bottom: none;
         }
 
+        li.level0.first {
+            margin-left: -20px;
+        }
+
         a.level0:hover,
         li:hover > a.level0 {
             color: $c-action;

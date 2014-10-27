@@ -57,6 +57,8 @@
     .product-img-box .product-name h1 {
         margin-bottom: 10px;
         border: 0;
+        padding-top: 2px;
+        font-weight: bold;
     }
 
     .product-shop {
@@ -157,6 +159,8 @@
     .block-related {
         width: 225px;
         float: right;
+        margin-top: -13px;
+        padding-top: 8px;
     }
 }
 
@@ -220,7 +224,7 @@
         }
     }
 }
-
+.product-essential {margin-bottom: 20px;}
 .product-img-box {
     width: 380px;
     float: left;
@@ -232,7 +236,7 @@
     }
 
     .product-image {
-        margin-bottom: $box-spacing;
+        margin-bottom: 2*$box-spacing;
     }
 
     .product-image img {
@@ -274,33 +278,48 @@
 
 .product-image-thumbs {
     li {
-        display: inline-block;
-    }
-    li:first-child {
-        margin-left: -1px;
+        float: left;width: 90px;height: 125px;margin-right: 10px;
     }
     a {
         display: inline-block;
-        border: 1px solid transparent;
+        border: 1px solid $c-fieldset-border;
+        opacity: 0.7;
+        &.current {opacity: 1;border: 1px solid darken($c-fieldset-border, 50%);}
     }
+}
+.more-views {
+    width: 290px;position: relative;overflow: hidden;margin: 0 auto;
+    .product-image-thumbs {
+        width: 2000em;
+        float: left;
+        position: relative;
+    }
+}
+.more-view-wrapper {
+    position: relative;
+    .product-image-thumbs__prev, .product-image-thumbs__next {position: absolute;top: 50%;margin-top: -18px;}
+    .product-image-thumbs__prev {left: 0;}
+    .product-image-thumbs__next {right: 0;}
 }
 
 .no-touch .product-image-thumbs {
     a:hover {
-        border-color: darken($c-module-border-light, 15%);
+        opacity: 1;
+        border: 1px solid darken($c-fieldset-border, 50%);
     }
 }
 
 .product-view .product-shop{
     padding-left: $trim;
+    padding-right: $trim/2;
 }
 
 .product-view .block-related {
     padding-left: $trim/2;
+    border-left: 1px solid $c-module-border;
 }
 
 .product-view .product-shop,
-.product-img-box,
 .product-collateral,
 .product-view .block-related,
 .box-collateral {
@@ -315,21 +334,20 @@
     }
 
     .add-to-cart {
-        padding-bottom: 3px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border-bottom: 1px solid $c-module-border;
+        position: relative;
     }
 
     /* Set a min-height so that the floated elements break appropriately */
     .add-to-cart .qty-wrapper,
     .product-options-bottom .price-box,
     .add-to-cart-buttons {
-        min-height: 40px;
+        min-height: 34px;
     }
 
     .product-options-bottom .price-box,
     .add-to-cart .qty-wrapper,
-    .add-to-cart-buttons .button,
     .add-to-cart-buttons .paypal-logo {
         margin-bottom: 10px;
     }
@@ -340,18 +358,18 @@
     }
 
     .add-to-cart .qty-wrapper label {
-        line-height: 34px;
+        margin-bottom: 5px;
     }
 
     .add-to-cart .qty-wrapper .qty {
         height: 34px;
-        display: inline-block;vertical-align: top;margin: 0 -1px;position: relative;z-index: 1;
+        display: inline-block;vertical-align: top;margin: 0 -1px;position: relative;z-index: 1;font-size: 13px;width: 41px;
     }
-    .qty-minus, .qty-plus {display: inline-block;vertical-align: top;height: 34px;line-height: 34px;text-align: center;width: 30px;border: 1px solid $c-input-border;color: $c-text;cursor: pointer;}
+    .qty-minus, .qty-plus {display: inline-block;vertical-align: top;height: 34px;line-height: 32px;text-align: center;width: 30px;border: 1px solid $c-input-border;color: $c-text;cursor: pointer;font-size: $f-size-xxl;}
+    .qty-minus {line-height: 31px;}
 
     .add-to-cart-buttons {
-        float: left;
-        margin-right: 10px;
+        position: absolute;right: 0;bottom: -55px;
 
         .paypal-logo {
             clear: left;
@@ -451,7 +469,7 @@
 }
 
 .product-view .sharing-links {
-    float: left;
+    clear: both;padding-top: 15px;
 
     &:after {
         @include clearfix;
@@ -459,7 +477,7 @@
 
     li {
         float: left;
-        padding: 0px 7px 7px;
+        padding: 0px 7px;
     }
 
     a {
@@ -630,6 +648,8 @@
     padding: 10px 0 15px;
     clear: both;
     position: relative;
+
+    p.required {margin-top: -15px;}
 }
 
 .product-options dt {
@@ -734,7 +754,7 @@
 }
 
 .product-options-bottom {
-    padding: 15px 0px;
+    padding: 0;
     border-top: 0;
     margin-bottom: $box-spacing;
 }
@@ -775,10 +795,9 @@
 /* "display: none" should be removed if products on site have a long list of product options and those product options */
 /*  affect the price so that the customer can see the updated price close to the "Add to Cart" button */
 .product-options-bottom .price-box {
-    display: none;
     float: right;
     margin: 0 0 $gap;
-    padding: 0;
+    padding: 28px 0 0;
 }
 
 @include bp(max-width, $bp-xsmall) {
@@ -802,9 +821,12 @@
 /* Block: Related */
 
 .block-related {
+    ol#block-related {
+        float: left;width: 2000em;position: relative;
+    }
 
-    li {
-        margin-bottom: $element-spacing;
+    li.item {
+        margin: 0;float: left;clear: none;width: 209px;
     }
 
     .block-title {
@@ -821,21 +843,37 @@
     }
 
     .product {
-        margin-left: 20px;
         position: relative;
     }
+
     .checkbox {
         float: left;
         margin-top: 36px;
     }
 
+    .product-image {
+        margin-bottom: 5px;
+    }
+
     .product-details {
-        margin-left: 90px;
+        margin-left: 0px;
+        clear: both;
+        text-align: center;
     }
 
     .product-name {
         margin-bottom: 3px;
+        font-family: $f-stack-special;
+        font-size: $f-size-xl;
+        font-weight: bold;
     }
+
+    .related-carousel-wrapper {position: relative;}
+
+    .related__prev, .related__next {
+        position: absolute;top: -57px;right: 0
+    }
+    .related__prev {right: 46px;}
 
     .product-details .price-box {
         margin: 2px 0 3px;
@@ -853,6 +891,8 @@
         &:after {
             @include clearfix;
         }
+        .price {font-size:$f-size;float: none;}
+        .regular-price {float: none;}
     }
     .link-wishlist {
         display: none;

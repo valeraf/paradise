@@ -95,6 +95,11 @@ $product-column-spacing-left: 33px;
     position: relative;
     margin-bottom: $product-column-spacing;
     text-align: center;
+    .product-image {
+        @include transition-property(box-shadow);
+        @include transition-duration(0.3s);
+        @include transition-timing-function(ease-in);
+    }
 
     &:after {
         @include clearfix;
@@ -117,14 +122,6 @@ $product-column-spacing-left: 33px;
     &:hidden {
         display: none;
     }
-}
-
-// If the height of the .product-info element changes, this value should be adjusted
-$productsGridActionHeight: 85px;
-
-.products-grid .product-info {
-    position: relative;
-    padding-bottom: $productsGridActionHeight + 10px;
 }
 
 .products-grid .actions {
@@ -168,18 +165,14 @@ $productsGridActionHeight: 85px;
 // Container: 480 - (2 * 20 trim) = 440
 // Math: (440 - (20 gutter)) / 2 items = 210
 
+.products-grid {
+    margin-left: -30px;
+}
 .products-grid > li {
-    float: left;
-    width: percentage(210 / 440);
-    margin-right: percentage(20 / 440);
-}
-
-.products-grid > li:nth-child(odd) {
-    clear: left;
-}
-
-.products-grid > li:nth-child(even) {
-    margin-right: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    margin-left: 30px;
 }
 
 .products-grid .product-image {
@@ -201,24 +194,15 @@ $productsGridActionHeight: 85px;
     $column-width: ($container - ($column-gutters * $product-column-spacing)) / $column-count;
 
     .products-grid {
-        /* Undo two-column config */
-        > li:nth-child(odd) {
-            clear: none;
-        }
-        > li:nth-child(even) {
-            margin-right: percentage($product-column-spacing / $container);
-        }
+        margin-left: -$trim;
 
-        /* Set three-column config */
         > li {
-            width: percentage($column-width / $container);
-            margin-right: percentage($product-column-spacing / $container);
+            width: 210px;
+            margin-left: $trim;
+            margin-right: 0;
         }
         > li:nth-child(#{$column-count}n+1) {
-            clear: left;
-        }
-        > li:nth-child(#{$column-count}n) {
-            margin-right: 0;
+            clear: none;
         }
     }
 }

@@ -140,6 +140,12 @@ h6, .h6 { @include h6; }
 .product-name .h1 {
     @include pageTitle;
 }
+.page-title h1, .category-title h1 {
+    padding: 0;margin: 0;text-transform: none;font-size: 22px;line-height: 1.4;
+}
+.page-title, .category-title, .sidebar .block-title {
+    padding-bottom: 15px;border-bottom: 1px solid $c-module-border-light;margin-bottom: 20px;
+}
 
 /* -------------------------------------------- *
  * Block Module
@@ -156,15 +162,16 @@ h6, .h6 { @include h6; }
 
 .block-title {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 
     h2,
     h3,
     strong {
         @include h4; 
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 0;
-        font-weight: 600;
+        font-weight: 400;
+        line-height: 1.4;
     }
     small {
         font-size: 100%;
@@ -391,12 +398,13 @@ a.button:hover {
 }
 
 .button2 {
+    background: $c-dark;
     border: 0;
-    padding: 0 5px;
+    padding: 0 12px;
     margin: 0;
-    background: transparent;
     cursor: pointer;
     vertical-align: middle;
+    min-width: 141px;
 }
 
 .button2:focus {
@@ -405,13 +413,13 @@ a.button:hover {
 
 .button2 span,
 .button2 span span {
-    line-height: 30px;
-    height: 30px;
-    text-decoration: underline;
+    line-height: 34px;
+    height: 34px;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: $f-size-xxs;
     display: inline-block;
-    color: $c-action;
-    font-family: $f-stack-special;
+    color: #FFF;
 
     &:hover {
         text-decoration: none;
@@ -451,6 +459,17 @@ a.button:hover {
         }
         .required {
             display: none;
+        }
+    }
+}
+
+.button-white {
+    background: #FFF;height: 34px;line-height: 32px;border: 1px solid $c-module-border;display: inline-block;
+
+    &, span, span span {
+        color: $c-text;font-weight: bold;font-size: $f-size-xxs;min-width: 70px;padding: 0 5px;text-transform: uppercase;font-family: $f-stack-sans;        
+        &:hover {
+            text-decoration: none;color: $c-text;
         }
     }
 }
@@ -563,7 +582,7 @@ a.button:hover {
 .breadcrumbs {
     overflow: hidden;
     margin: -15px 0 32px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     border-bottom:1px solid $c-module-border-light;
 }
 
@@ -609,12 +628,8 @@ a.button:hover {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 1px solid $c-module-border-light;
     text-align: center;
-    /* Hide text */
-    font: 0/0 a;
     text-shadow: none;
-    color: transparent;
     position: relative;
 
     &:hover {
@@ -641,11 +656,8 @@ a.button:hover {
 }
 
 .btn-remove2 {
-    @extend .icon-sprite;
-    $icon-padding: 3px;
-    background-position: 4px -650px+2px;
-    border: none;
     vertical-align: top; // Adding this so that the button will show at the top of the cart rows, rather than at the baseline
+    color: $c-text;
 
     &:after {
         display: none;
@@ -749,12 +761,12 @@ a.button:hover {
 .col-left,
 .col-right,
 .col-main {
-    padding: 0 10px;
+    //padding: 0 10px;
 }
 
 .col-left {
     float: left;
-    width: percentage(240px/960px);
+    width: percentage(220px/1180px);
     padding-left: 0; /* Remove the 15px padding */
     clear: left;
 
@@ -765,7 +777,7 @@ a.button:hover {
 
 .col-right {
     float: right;
-    width: percentage(240px/960px);
+    width: percentage(220px/1180px);
     padding-right: 0; /* Remove the 15px padding */
 
     img {
@@ -775,7 +787,7 @@ a.button:hover {
 
 .col-main {
     float: left;
-    width: percentage(720px/960px);
+    width: percentage(930px/1180px);
 }
 
 .col1-layout {
@@ -1168,7 +1180,7 @@ a.button:hover {
 }
 
 .price-box .price {
-    color: $c-text-primary;
+    color: $c-grey;
     font-size: $f-size-xl;
 }
 

@@ -44,7 +44,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
 
         <?php if ($this->helper('wishlist')->isAllowInCart() && $isVisibleProduct) : ?>
             <li>
-                <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
+                <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><i class="fa fa-heart"></i> <?php echo $this->__('Move to wishlist'); ?></a>
             </li>
         <?php endif ?>
     </ul>
@@ -226,7 +226,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
 
         <?php if ($this->helper('wishlist')->isAllowInCart() && $isVisibleProduct) : ?>
             <li>
-                <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
+                <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><i class="fa fa-heart"></i> <?php echo $this->__('Move to wishlist'); ?></a>
             </li>
         <?php endif ?>
     </ul>
