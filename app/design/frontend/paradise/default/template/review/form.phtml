@@ -38,59 +38,21 @@
             <?php if( $this->getRatings() && $this->getRatings()->getSize()): ?>
                 <h4><?php echo $this->__('How do you rate this product?') ?> <em class="required">*</em></h4>
                 <span id="input-message-box"></span>
-                <table class="data-table review-summary-table ratings" id="product-review-table">
-                    <col width="1" />
-                    <col />
-                    <col />
-                    <col />
-                    <col />
-                    <col />
-                    <thead>
-                        <tr>
-                            <th>&nbsp;</th>
-                            <th>
-                                <div class="rating-box">
-                                    <span class="rating-number">1</span>
-                                    <span class="rating nobr" style="width:20%;"><?php echo $this->__('1 star') ?></span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="rating-box">
-                                    <span class="rating-number">2</span>
-                                    <span class="rating nobr" style="width:40%;"><?php echo $this->__('2 star') ?></span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="rating-box">
-                                    <span class="rating-number">3</span>
-                                    <span class="rating nobr" style="width:60%;"><?php echo $this->__('3 star') ?></span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="rating-box">
-                                    <span class="rating-number">4</span>
-                                    <span class="rating nobr" style="width:80%;"><?php echo $this->__('4 star') ?></span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="rating-box">
-                                    <span class="rating-number">5</span>
-                                    <span class="rating nobr" style="width:100%;"><?php echo $this->__('5 star') ?></span>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div class="review-summary-form" id="product-review-table">
                     <?php foreach ($this->getRatings() as $_rating): ?>
-                        <tr>
-                            <th><?php echo $this->escapeHtml($_rating->getRatingCode()) ?></th>
+                    <div class="review-form-row">
+                        <div class="review-form-label"><?php echo $this->escapeHtml($_rating->getRatingCode()) ?></div>
                         <?php foreach ($_rating->getOptions() as $_option): ?>
-                            <td class="value"><label for="<?php echo $this->escapeHtml($_rating->getRatingCode()) ?>_<?php echo $_option->getValue() ?>"><input type="radio" name="ratings[<?php echo $_rating->getId() ?>]" id="<?php echo $this->escapeHtml($_rating->getRatingCode()) ?>_<?php echo $_option->getValue() ?>" value="<?php echo $_option->getId() ?>" class="radio" /></label></td>
+                            <div class="review-form-rating-option">
+                                <label for="<?php echo $this->escapeHtml($_rating->getRatingCode()) ?>_<?php echo $_option->getValue() ?>">
+                                    <input type="radio" name="ratings[<?php echo $_rating->getId() ?>]" id="<?php echo $this->escapeHtml($_rating->getRatingCode()) ?>_<?php echo $_option->getValue() ?>" value="<?php echo $_option->getId() ?>" class="radio" />
+                                </label>
+                            </div>
                         <?php endforeach; ?>
-                        </tr>
+                        <div class="review-form-checked"><span></span> <?php echo $this->__('stars') ?></div>
+                    </div>
                     <?php endforeach; ?>
-                    </tbody>
-                </table>
+                </div>
                 <input type="hidden" name="validate_rating" class="validate-rating" value="" />
                 <script type="text/javascript">decorateTable('product-review-table')</script>
             <?php endif; ?>

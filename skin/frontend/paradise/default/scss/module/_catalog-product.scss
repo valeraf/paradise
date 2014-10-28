@@ -67,10 +67,8 @@
 
         .product-name {
             display: none;
-            float: left;
         }
-        .product-name .h1 {
-            float: left;
+        .product-name .h1 { 
             margin-bottom: 5px;
         }
 
@@ -102,7 +100,7 @@
         }
 
         .availability {
-            font-size: $f-size-s;
+            font-size: $f-size-s;clear: both;
             .label {font-weight: bold}
         }
         .product-options-list {

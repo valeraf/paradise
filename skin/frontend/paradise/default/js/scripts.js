@@ -60,7 +60,38 @@ jQuery(function($){
     var val = parseInt($('input.qty').val());
     $('input.qty').val(val - 1);
   });
+  $('.review-summary-form input').each(function(){
+    if($(this).is(':checked')){
+      $(this).parent().addClass('checked-star');
+    }
+  });
+  $('.review-summary-form label').mouseenter(function(){
+    var $parent = $(this).parents('.review-form-row');
+    var index = $(this).parents('.review-form-rating-option').index()-1;
+    $parent.find('.review-form-checked:not(.selected)').show().children('span').html(index+1);    
+  }).mouseout(function(){
+    var $parent = $(this).parents('.review-form-row');
+    var index = $(this).parents('.review-form-rating-option').index()-1;
+    $parent.find('.review-form-checked').removeAttr('style');
+  });
+  $('.review-summary-form input').on('change',function(){
+    var $parent = $(this).parents('.review-form-row');
+    var index = $(this).parents('.review-form-rating-option').index()-1;
+    checkStars($parent,index);
+    $parent.find('.checked-star').removeClass('checked-star');
+    $(this).parent().addClass('checked-star');
+  });
 });
+function checkStars(parent_row,index){
+  var arr = parent_row.find('.review-form-rating-option');
+  parent_row.find('.before-checked-star').removeClass('before-checked-star');
+  $j.each(arr, function(i,e){
+    if(i < index){
+      $j(e).find('label').addClass('before-checked-star');
+    }
+  });
+  parent_row.find('.review-form-checked').addClass('selected').children('span').html(index+1);
+};  
 
 ProductMediaManager.wireThumbnails = function() {
   //trigger image change event on thumbnail click
