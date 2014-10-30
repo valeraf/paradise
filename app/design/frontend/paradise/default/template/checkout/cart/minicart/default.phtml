@@ -31,9 +31,9 @@
 ?>
 <li class="item" xmlns="http://www.w3.org/1999/html">
     <?php if ($this->hasProductUrl()): ?>
-        <a href="<?php echo $this->getProductUrl()?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(50, 50)->setWatermarkSize('30x10'); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></a>
+        <a href="<?php echo $this->getProductUrl()?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(90, 125)->setWatermarkSize('30x10'); ?>" width="90" height="125" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></a>
     <?php else: ?>
-        <span class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(50, 50)->setWatermarkSize('30x10'); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></span>
+        <span class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(90, 125)->setWatermarkSize('30x10'); ?>" width="90" height="125" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></span>
     <?php endif; ?>
     <div class="product-details">
         <p class="product-name"><?php if ($this->hasProductUrl()): ?><a href="<?php echo $this->getProductUrl() ?>"><?php endif; ?><?php echo $this->escapeHtml($this->getProductName()) ?><?php if ($this->hasProductUrl()): ?></a><?php endif; ?></p>
@@ -148,14 +148,13 @@
         </table>
 
         <?php if ($isVisibleProduct): ?>
-        <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item') ?>" class="btn-edit">
+        <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item') ?>" class="btn-edit"><i class="fa fa-pencil-square-o"></i> 
             <?php echo $this->__('Edit item')?>
         </a>
-            |
             <?php if (!$this->isOnCheckoutPage()): ?>
                 <a href="<?php echo $this->getAjaxDeleteUrl() ?>" title="<?php echo $this->__('Remove This Item') ?>"
                    data-confirm="<?php echo $this->__('Are you sure you would like to remove this item from the shopping cart?') ?>"
-                   class="remove">
+                   class="remove"><i class="fa fa-remove"></i>
                     <?php echo $this->__('Remove Item') ?>
                 </a>
             <?php else: ?>

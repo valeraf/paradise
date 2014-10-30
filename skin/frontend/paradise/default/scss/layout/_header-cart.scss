@@ -34,13 +34,16 @@
 .skip-cart {
     &:not(.skip-active):hover {
         .icon {
-            background-position: -50px (-100px + ($toolbar-icon-padding-offset/2) + 1px);
+          background: url(../images/cart-ico.png) center center no-repeat $c-red;
         }
     }
 
     .icon {
-        @extend .icon-sprite;
-        background-position: -0px (-100px + ($toolbar-icon-padding-offset/2) + 1px);
+      background: url(../images/cart-ico.png) center center no-repeat $c-red;width: 42px;height: 42px;
+    }
+    .label {
+      font-size: $f-size-s;
+      color: $c-red;
     }
 }
 
@@ -60,14 +63,17 @@
     }
 
     #header-cart.skip-active {
-        @include menu;
         display: block;
         position: absolute;
         z-index: 200;
-        top: 140px;
+        top: 163px;
         right: 0;
-        width: 320px;
+        width: 400px;
         background: white;
+        padding: 0 0 15px;
+        border-top: 1px solid $c-red;
+        border-bottom: 1px solid $c-red;
+        @include box-shadow(rgba(black,0.4) 0 5px 8px);
     }
 
 }

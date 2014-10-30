@@ -81,6 +81,17 @@ jQuery(function($){
     $parent.find('.checked-star').removeClass('checked-star');
     $(this).parent().addClass('checked-star');
   });
+
+  if ($('.checkboxed input').is(':checked')){
+    $(this).parent().addClass('checked');
+  }
+  $('.checkboxed input').on('change', function(){
+    if ($(this).is(':checked')){
+      $(this).parent().addClass('checked');
+    }else{
+      $(this).parent().removeClass('checked');
+    }
+  });
 });
 function checkStars(parent_row,index){
   var arr = parent_row.find('.review-form-rating-option');

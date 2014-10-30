@@ -37,6 +37,13 @@
         @include loadingOverlay();
         clear: both;
         position: relative;
+        .block-content {
+            margin: 0;
+        }
+        .price-box .price, .price {
+            font-family: $f-stack-sans;
+        }
+        .cart-item-quantity {height: 34px;vertical-align: top;}
     }
 
     .block-cart {
@@ -67,12 +74,11 @@
         }
     }
     .mini-products-list {
-        padding: $box-spacing;
-        padding-top: 0px;
+        padding: 0px;
 
         li {
-            padding: 8px 5px 8px 11px;
-            border-bottom: 1px solid #DDDDDD;
+            padding: 15px 20px;
+            border-bottom: 1px solid $c-divider-border;
             position: relative;
 
             &.last {
@@ -81,6 +87,13 @@
 
             .product-details {
                 position: relative;
+                .btn-edit, .remove {
+                    position: absolute;text-indent: -9999px;overflow: hidden;right: 0;top: 0;width: 14px;display: inline-block;vertical-align: top;
+                    i {float: left;text-indent: 0;color: $c-grey;}
+                }
+                .btn-edit {right: 20px;top: 1px;}
+                .details {@extend .button-white;width: 108px;font-family: $f-stack-sans;text-align: center;font-weight: bold;}
+                .truncated {display: inline-block;}
             }
         }
     }
@@ -91,27 +104,34 @@
             font-weight: bold;
 
             a {
-                color: $c-action;
+                color: $c-text;
+                font-family: $f-stack-special;
+                font-weight: bold;
+                font-size: $f-size-s;
+
+                &:hover {
+                    color: $c-red;
+                }
             }
         }
     }
 
     .info-wrapper {
         margin-bottom: 0.5em;
+        font-size: $f-size-s;
+        font-family: $f-stack-sans;
 
         th {
-            text-transform: uppercase;
             padding-right: $gap;
         }
         td {
-            color: $c-text-primary;
             clear: right;
         }
 
         .qty-wrapper {
             td {
-                height: 33px;
-                line-height: 33px;
+                height: 34px;
+                line-height: 34px;
             }
         }
 
@@ -147,30 +167,36 @@
             color: white;
             text-transform: uppercase;
         }
-        .price {
-            color: $c-text-primary;
-        }
     }
 
     .minicart-actions {
-        padding: $box-spacing;
+        padding: 15px 20px 0;
         margin-top: 0px;
         overflow: hidden;
         position: relative;
+        border-top: 1px solid $c-divider-border;
 
         .checkout-button {
             min-width: 145px;
         }
 
         .cart-link {
-            height: 33px;
-            line-height: 39px;
-            text-transform: uppercase;
+            background: $c-dark;
+            height: 34px;
+            line-height: 34px;
             display: block;
-            font-size: $f-size-s;
-            left: $box-spacing;
+            font-size: $f-size-xxs;
+            text-transform: uppercase;
+            color: #fff;
+            left: 20px;
             bottom: 17px;
             position: absolute;
+            font-family: $f-stack-sans;
+            font-weight: bold;padding: 0 10px;
+            top: 15px;
+            &:hover {
+                text-decoration: none;
+            }
         }
 
         .paypal-logo {

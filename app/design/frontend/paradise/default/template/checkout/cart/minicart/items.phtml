@@ -41,12 +41,6 @@ if(empty($_cartQty)) {
 <div id="minicart-success-message" class="minicart-message"></div>
 
 <div class="minicart-wrapper">
-
-    <p class="block-subtitle">
-        <?php echo $this->__('Recently added item(s)') ?>
-        <a class="close skip-link-close" href="#" title="<?php echo $this->__('Close'); ?>">&times;</a>
-    </p>
-
     <?php $_items = $this->getRecentItems() ?>
     <?php $countItems = count($_items); ?>
     <?php if($countItems): ?>
@@ -71,19 +65,6 @@ if(empty($_cartQty)) {
         <div id="minicart-widgets">
             <?php echo $this->getChildHtml('cart_promotion') ?>
         </div>
-        <div class="block-content">
-            <p class="subtotal">
-                <?php if ($this->canApplyMsrp()): ?>
-                    <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
-                <?php else: ?>
-                    <span class="label"><?php echo $this->__('Cart Subtotal:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
-                    <?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
-                        <br />(<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
-                    <?php endif; ?>
-                <?php endif; ?>
-            </p>
-        </div>
-
 
         <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
             <div class="minicart-actions">

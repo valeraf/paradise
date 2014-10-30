@@ -386,7 +386,7 @@ $product-column-spacing-left: 33px;
         min-width: 50px;
     }
     .product-details {
-        margin-left: 60px;
+        margin-left: 105px;
     }
 
     // Vertically center product name
@@ -395,7 +395,6 @@ $product-column-spacing-left: 33px;
     }
 
     li {
-        margin-bottom: $gap;
         clear: both;
 
         &:after {

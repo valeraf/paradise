@@ -363,7 +363,10 @@
         height: 34px;
         display: inline-block;vertical-align: top;margin: 0 -1px;position: relative;z-index: 1;font-size: 13px;width: 41px;
     }
-    .qty-minus, .qty-plus {display: inline-block;vertical-align: top;height: 34px;line-height: 32px;text-align: center;width: 30px;border: 1px solid $c-input-border;color: $c-text;cursor: pointer;font-size: $f-size-xxl;}
+    .qty-minus, .qty-plus {
+        display: inline-block;vertical-align: top;height: 34px;line-height: 32px;text-align: center;width: 30px;border: 1px solid $c-input-border;color: $c-text;cursor: pointer;font-size: $f-size-xxl;
+        &:hover {border-color: $c-red;color: $c-red;}
+    }
     .qty-minus {line-height: 31px;}
 
     .add-to-cart-buttons {

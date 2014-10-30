@@ -39,9 +39,9 @@
 
     p.required {
         margin-bottom: 5px;
-        float: right;
         font-size: $f-size-xs;
         margin-top: 0px;
+        clear: both;
     }
 }
 
@@ -170,7 +170,7 @@ input[type=number],
 input[type=password],
 input[type=tel],
 input[type=text] {
-    height: 30px;
+    height: 40px;
     padding: 0 8px;
 }
 
@@ -180,7 +180,7 @@ input[type=number],
 input[type=password],
 input[type=tel],
 input[type=text] {
-    width: (230px + 135px);
+    width: (110px + 135px);
     max-width: 100%;
 }
 
@@ -300,23 +300,17 @@ p.required,
     input.radio,
     input.checkbox {
         float: left;
-        margin-right: -40px;
         margin-top: 10px;
-        margin-left: 15px;
+        margin-right: -25px;
     }
 
-    label {
-        @include touch-button;
+    label {        
         display: inline-block;
         width: auto;
         max-width: none;
         min-width: 250px;
         float: none;
-        padding: 6px 10px 6px 40px;
-
-        &:hover {
-            background-color: shade($c-module-background, 5%);
-        }
+        padding: 6px 10px 6px 25px;
     }
 
     /* When a label is next to an input that is set to not display, we should style the label in a non-clickable state */
@@ -329,6 +323,19 @@ p.required,
         }
     }
 
+    .checkboxed {
+        position: relative;padding-left: 25px;
+        &:before {content: "\f096";font-family: FontAwesome;position: absolute;left: 0;font-size: 18px;top: 3px;}
+        &.checked:before {content: "\f046";}
+        input {position: absolute;opacity: 0;left: 0;top: 0;}
+    }
+
+}
+.checkboxed {
+    position: relative;padding-left: 25px;
+    &:before {content: "\f096";}
+    &.checked:before {content: "\f046";}
+    input {position: absolute;opacity: 0;left: 0;top: 0;}
 }
 
 .product-options ul.options-list label,
@@ -366,9 +373,7 @@ p.required,
 
 form {
     .form-instructions {
-        font-style: italic;
-        font-family: $f-stack-serif;
         font-size: $f-size-s;
-        color: $c-text-gray;
+        color: $c-text;
     }
 }

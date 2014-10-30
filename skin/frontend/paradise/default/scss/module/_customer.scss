@@ -42,8 +42,11 @@
             button,
             .button {
                 float: none;
-                min-width: 50%;
                 margin: 0;
+                background: $c-dark;
+            }
+            .forgot-pass {
+                margin-left: 20px;color: $c-text;font-size:$f-size-s;
             }
         }
 
@@ -54,6 +57,9 @@
                 margin: $gap 0 $gap * 2 0;
             }
         }
+    }
+    .content {
+        h2 {border-bottom: none;font-size: $f-size-xs;text-transform: uppercase;font-weight: bold;color: $c-text;font-family: $f-stack-sans;padding: 0;margin: 0 0 15px;}
     }
 
     @include bp(min-width, $bp-xsmall + 1) {
@@ -163,11 +169,11 @@
 .customer-account-create {
     .buttons-set {
         max-width: 455px;
+        .button {background: $c-dark;}
     }
 
     .fieldset,
     .buttons-set {
-        margin-left: $trim;
 
         @include bp(max-width, $bp-xsmall) {
             margin-left: 0;
@@ -180,6 +186,9 @@
 
     #remember-me-popup {
         max-width: 455px;
+    }
+    a.back-link {
+        @extend .button-white;text-align: center;
     }
 }
 
@@ -333,6 +342,9 @@ body.customer-account {
             width: 80px;
             float: left;
         }
+    }
+    label {
+        color: $c-grey;
     }
 }
 

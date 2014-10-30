@@ -469,8 +469,11 @@ a.button:hover {
     &, span, span span {
         color: $c-text;font-weight: bold;font-size: $f-size-xxs;min-width: 70px;padding: 0 5px;text-transform: uppercase;font-family: $f-stack-sans;        
         &:hover {
-            text-decoration: none;color: $c-text;
+            text-decoration: none;color: $c-red;
         }
+    }
+    &:hover {
+        border: 1px solid $c-red;
     }
 }
 
@@ -550,7 +553,9 @@ a.button:hover {
     button.button {
         float: right;
         margin-left: 5px;
-        min-width: 140px;
+        min-width: 80px;
+        padding: 0 15px;
+        height: 34px;
     }
 
     &:after {
@@ -1331,8 +1336,8 @@ a.button:hover {
     padding: 8px;
     border: 1px solid $c-action;
     background-color: #F6F6F6;
-    top: 21px;
-    left: -100px;
+    top: 34px;
+    left: -50px;
 
     &:after {
         @include triangle(up, 7px, $c-action);
