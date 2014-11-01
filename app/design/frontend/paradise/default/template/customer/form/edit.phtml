@@ -32,7 +32,6 @@
     <div class="fieldset">
         <?php echo $this->getBlockHtml('formkey')?>
         <h2 class="legend"><?php echo $this->__('Account Information') ?></h2>
-        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
         <ul class="form-list">
             <li class="fields">
                 <?php echo $this->getLayout()->createBlock('customer/widget_name')->setObject($this->getCustomer())->toHtml() ?>
@@ -56,7 +55,7 @@
             <li><?php echo $_gender->setGender($this->getCustomer()->getGender())->toHtml() ?></li>
         <?php endif ?>
             <li class="control">
-                <input type="checkbox" name="change_password" id="change_password" value="1" onclick="setPasswordForm(this.checked)" title="<?php echo $this->__('Change Password') ?>"<?php if($this->getCustomer()->getChangePassword()==1): ?> checked="checked"<?php endif; ?> class="checkbox" /><label for="change_password"><?php echo $this->__('Change Password') ?></label>
+                <label class="checkboxed"><input type="checkbox" name="change_password" id="change_password" value="1" onclick="setPasswordForm(this.checked)" title="<?php echo $this->__('Change Password') ?>"<?php if($this->getCustomer()->getChangePassword()==1): ?> checked="checked"<?php endif; ?> class="checkbox" /> <?php echo $this->__('Change Password') ?></label>
             </li>
         </ul>
     </div>
@@ -87,6 +86,7 @@
             </li>
         </ul>
     </div>
+    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
     <div class="buttons-set">
         <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
         <button type="submit" title="<?php echo $this->__('Save') ?>" class="button"><span><span><?php echo $this->__('Save') ?></span></span></button>

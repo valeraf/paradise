@@ -29,61 +29,86 @@
 
 .product-review {
     .product-img-box {
-        p.label {
-            border-bottom: 1px solid $c-module-border;
-            font-size: $f-size-xl;
-            font-family: $f-stack-special;
-            margin-top: 20px;
-            padding-bottom: $gap;
-            text-transform: uppercase;
-        }
+        width: 212px;
+        margin-right: 30px;
 
         .rating-box {
-            margin: 15px 0;
+            margin: 15px 0;display: none;
+        }
+
+        .rating-links {
+            a {
+                color: $c-text;font-size: $f-size-s;text-decoration: underline;margin: 0 6px;
+                &:hover {
+                    color: $c-red;
+                }
+            }
+            .separator {display: none;}
         }
     }
 
     .product-details {
+        overflow: hidden;
+
+        p.label {
+            font-size: $f-size-s;
+            font-weight: bold;
+        }
+
+        .rating-links {
+            display: none;
+        }
+
+        .rating-box {
+
+        }
+
         h2 {
-            border-bottom: 1px solid $c-module-border;
-            color: #3399CC;
-            font-size: $f-size-xl;
+            font-size: 24px;
             font-weight: 600;
             font-family: $f-stack-special;
-            padding-bottom: $gap;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: $f-size-s;
+            font-weight: bold;
+            margin: 0;
         }
     }
 
     .ratings-table {
-        font-family: $f-stack-special;
+        margin-bottom: 10px;
 
         th {
             padding-right: $gap;
         }
-
-        tr {
-            float: left;
-            font-size: $f-size-xs;
-            margin-right: $gap;
-            text-transform: uppercase;
-        }
     }
 
     .ratings-description {
+        margin-bottom: 20px;
+
         dt {
-            border-bottom: 1px solid $c-module-border;
-            font-size: $f-size-xl;
-            font-weight: 400;
-            font-family: $f-stack-special;
-            margin-top: 20px;
-            padding: $gap 0;
-            text-transform: uppercase;
+            font-size: $f-size-s;
+            font-weight: 600;
+            padding: 0 0 10px;
         }
 
         dd {
-            color: #737373;
-            font-family: $f-stack-special;
+            color: $c-text;
             font-size: $f-size-s;
+        }
+
+        .review-date {
+            color: #7f7f7f;
+            font-size: $f-size-s;
+            font-style: italic;
+            padding-top: 10px;
+        }
+    }
+    .back-link {
+        a {
+            @extend .button-dark;
         }
     }
 }
@@ -95,19 +120,6 @@
         .ratings-table {
             tr {
                 float: none;
-            }
-        }
-    }
-}
-
-// ---------------------------------------------
-
-@include bp(min-width, 1126px) {
-    .product-review {
-        .ratings-table {
-            tr {
-                float: left;
-                margin-right: 15px;
             }
         }
     }

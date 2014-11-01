@@ -332,8 +332,8 @@ p.required,
 
 }
 .checkboxed {
-    position: relative;padding-left: 25px;
-    &:before {content: "\f096";}
+    position: relative;padding-left: 25px;min-height: 1px;
+    &:before {content: "\f096";font-family: FontAwesome;position: absolute;left: 0;font-size: 18px;top: 3px;}
     &.checked:before {content: "\f046";}
     input {position: absolute;opacity: 0;left: 0;top: 0;}
 }

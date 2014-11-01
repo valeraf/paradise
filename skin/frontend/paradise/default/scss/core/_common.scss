@@ -251,11 +251,13 @@ body:not(.customer-account) .block:first-child .block-title {
                     width: 100%;
                     cursor: pointer;
                     border-bottom: 0;
+                    padding-left: 25px;
                 }
 
                 &.active {
                     > strong {
                         @include accordionDtBase('down', $c-module-border);
+                        padding-left: 25px;
                     }
                 }
             }
@@ -263,16 +265,13 @@ body:not(.customer-account) .block:first-child .block-title {
             .block-content {
                 padding: $box-spacing;
                 margin-top: 0;
-                border-width: 0 1px;
-                border-style: solid;
-                border-color: $c-module-border;
             }
         }
         // This selector is highly fickle, because if a div gets added beneath the last normal block in a sidebar,
         // it will break. However it is the simplest solution to applying this trivial style.
-        .block:last-of-type {
-            border-bottom: 1px solid $c-module-border;
-        }
+        // .block:last-of-type {
+        //     border-bottom: 1px solid $c-module-border;
+        // }
     }
 
     // Appending " Menu" so that users know that the link will expand a menu
@@ -364,6 +363,7 @@ body:not(.customer-account) .block:first-child .block-title {
     text-transform: uppercase;
     vertical-align: middle;
     white-space: nowrap;
+    height: 34px;
 }
 
 a.button {
@@ -464,17 +464,29 @@ a.button:hover {
 }
 
 .button-white {
-    background: #FFF;height: 34px;line-height: 32px;border: 1px solid $c-module-border;display: inline-block;
+    background: #FFF;height: 34px;line-height: 32px;border: 1px solid $c-module-border;display: inline-block;@include transition(all 0.15s ease-in);text-align: center;
 
     &, span, span span {
-        color: $c-text;font-weight: bold;font-size: $f-size-xxs;min-width: 70px;padding: 0 5px;text-transform: uppercase;font-family: $f-stack-sans;        
+        color: $c-text;font-weight: bold;font-size: $f-size-xxs;min-width: 115px;padding: 0 5px;text-transform: uppercase;font-family: $f-stack-sans;        
         &:hover {
             text-decoration: none;color: $c-red;
         }
     }
     &:hover {
+      &, span {
         border: 1px solid $c-red;
+        color: $c-red;
+      }
     }
+}
+.button-dark {
+  background: $c-dark;height: 34px;line-height: 34px;border: none;display: inline-block;padding: 0 20px;text-align: center;
+  &, span {
+    color: #fff;font-weight: bold;font-size: $f-size-xxs;text-transform: uppercase;@include transition(all 0.15s ease-in);
+  }
+  &:hover {
+    text-decoration: none;background: $c-red;
+  }
 }
 
 /* -------------------------------------------- *
@@ -531,7 +543,6 @@ a.button:hover {
     clear: both;
     margin: $box-spacing 0 0;
     padding-top: $box-spacing;
-    border-top: 1px solid $c-module-border-light;
     text-align: right;
 
     p.required {
@@ -553,7 +564,7 @@ a.button:hover {
     button.button {
         float: right;
         margin-left: 5px;
-        min-width: 80px;
+        min-width: 115px;
         padding: 0 15px;
         height: 34px;
     }
@@ -747,6 +758,7 @@ a.button:hover {
     .main-container,
     .footer-container {
         padding: $trim;
+        padding-top: 85px;
     }
 }
 
@@ -767,6 +779,9 @@ a.button:hover {
 .col-right,
 .col-main {
     //padding: 0 10px;
+    &:after {
+      @include clearfix;
+    }
 }
 
 .col-left {
@@ -1540,6 +1555,8 @@ a.button:hover {
     color: $c-text;
     line-height: 30px;
     font-size: $f-size-xs;
+
+    .new-select {display: inline-block;vertical-align: top;}
 }
 
 .toolbar label,
@@ -1619,7 +1636,6 @@ $toolbar-icon-padding-offset: 8px;
 
 .pager {
     float: right;
-    overflow: hidden;
 
     & > .count-container {
         float: left;
@@ -1630,12 +1646,12 @@ $toolbar-icon-padding-offset: 8px;
         font-family: $f-stack-sans;
         white-space: nowrap;
         margin: 0 15px 0 0;
+        line-height: 40px;
     }
 
     .limiter {
         float: left;
-        height: 30px;
-        line-height: 30px;
+        line-height: 40px;
 
         & > label {
             padding-right: 5px;
@@ -1649,7 +1665,7 @@ $toolbar-icon-padding-offset: 8px;
     .amount,
     .limiter,
     .pages {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
 }
@@ -1677,9 +1693,9 @@ $toolbar-icon-padding-offset: 8px;
     text-transform: uppercase;
     vertical-align: middle;
     white-space: nowrap;
-    line-height: 30px;
+    line-height: 40px;
     width: 25px;
-    height: 30px;
+    height: 40px;
     padding: 0;
     color: $c-action;
     font-family: $f-stack-sans;

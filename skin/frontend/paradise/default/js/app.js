@@ -115,6 +115,14 @@ $j(document).ready(function () {
         }
     });
 
+    $j(document).mouseup(function (e)
+    {
+        var container = $j("#header-cart");
+        if (container.has(e.target).length === 0 && container.is(':visible') && $j(document).width() > 768){
+            container.removeClass('skip-active');
+        }
+    });
+
     $j('#header-cart').on('click', '.skip-link-close', function(e) {
         var parent = $j(this).parents('.skip-content');
         var link = parent.siblings('.skip-link');

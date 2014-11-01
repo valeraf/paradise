@@ -29,6 +29,7 @@ jQuery(function($){
   });
 
   $('select').parent('.input-box').addClass('new-select').prepend('<span class="new-select-label">');
+  $('.pager select').wrap('<div class="new-select">').parent().prepend('<span class="new-select-label">');
   $('select').each(function(){
     if($(this).is(':disabled')){
       $(this).parent('.new-select').addClass('new-select-disabled');
@@ -42,7 +43,7 @@ jQuery(function($){
   $('.new-select').on('change', 'select', function(){
     $('.new-select select').each(function(){
       var text = $(this).find('option:selected').text();
-      $(this).next('.new-select-label').html(text)
+      $(this).prev('.new-select-label').html(text)
     });
     $('select').each(function(){
       if($(this).is(':disabled')){

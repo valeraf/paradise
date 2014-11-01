@@ -471,3 +471,15 @@
         }
     }
 }
+
+
+.review-customer-index {
+    .data-table {
+        tr {
+            td:first-child {
+                padding-left: 5px;
+            }
+        }
+        .product-name {margin: 0;font-family: $f-stack-special;font-weight: bold;font-size: $f-size-s;padding-right: 15px;}
+    }
+}
