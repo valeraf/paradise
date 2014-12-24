@@ -6,6 +6,7 @@
             <reference name="header">
                 <block type="page/switch" name="store_language" as="store_language" template="page/switch/flags.phtml"/>
             </reference>
+            <block type="slideshow/slideshow" name="homepage-slider" as="homepage-slider" template="slideshow/slideshow.phtml"/>
         </reference>
     </default>
     <catalog_category_view>

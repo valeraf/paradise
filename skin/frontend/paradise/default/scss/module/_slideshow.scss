@@ -32,14 +32,14 @@
     display: block;
     width: 100%;
     margin: 0 0 41px;
-    border: 1px solid $c-module-border-light;
 
     .slideshow {
         width: 100%;
         padding: 0;
         position: relative;
         margin: 0;
-        border: 1px solid #FFFFFF;
+        border-top: 1px solid $c-divider-border;
+        border-bottom: 1px solid $c-divider-border;
         & > li {
             position: absolute;
             top: 0;
@@ -48,6 +48,9 @@
             padding: 0;
             display: block;
             margin: 0;
+            text-align: center;
+            background: #fafafa;
+            height: 378px;
 
             // in case script does not load
             &:first-child {
@@ -56,8 +59,7 @@
             }
 
             img {
-                max-width: 100%;
-                width: 100%;
+                display: inline-block;height: 100%;
             }
         }
     }
