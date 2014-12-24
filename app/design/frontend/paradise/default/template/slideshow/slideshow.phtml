@@ -1,0 +1,30 @@
+<?php if(Mage::getStoreConfig("slideshow/general/enable")): ?>
+<?php //echo Mage::getStoreConfig("slideshow/general/width"); ?>
+<?php
+	$bannerCollections = Mage::getModel('slideshow/slideshow')
+	->getCollection()
+	->addFieldToFilter(
+		array('stores', 'stores'),
+		array(
+			array('finset'=>Mage::app()->getStore()->getId()), 
+			array('eq'=>'0'))
+	)
+	->addFieldToFilter('filename', array('neq' => ''))
+	->addFieldToFilter('status', array('eq' => '1'))->setOrder("sort_order","ASC");	
+	$media_url = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+?>
+<?php if(count($bannerCollections) > 0): ?>
+<div class="fluid_container">
+<div class="slideshow-container">
+	<ul class="slideshow">
+<?php foreach ($bannerCollections as $item): ?>
+		<li>
+			<a href="<?php echo $item->getSlideUrl() ?>"  target="<?php echo $item->getSlideTarget() ?>"><img src="<?php echo $media_url.$item->getFilename() ?>" alt=""></a>
+    </li>
+<?php endforeach;?>
+	</ul>
+</div>
+</div>
+
+<?php endif; ?>
+<?php endif; ?>
